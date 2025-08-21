@@ -1,0 +1,18 @@
+﻿Datum:
+	10.8.2025
+
+Problem:
+	Domain razlazem na subdomains : Passes, Contracts, Offers, Reports. 
+	Kako najbolje implementirati subdomains, a da odrzim modularnost i skalabilnost.
+
+Decision:
+	U pocetnoj fazi projekta, odlucujem da ce svaki subdomain biti zaseban bounded context, a svaki subdomain je zasebni module. 
+ Cim vidim da subdomain je bounded context zasebno => Modular Monolith.
+
+Consequences:
+	Svaki module ima procese svoje + svaki subdomain je module sa bounded context => postizem modularnost unutar Monolith =>  Modular Moolith arhitektura. 
+ Modular Monolith ima folder za svaki subdomain, a subdomain = module, stoga Passes, Contracts, Offers i Reports are modules. 
+	Svaki module folder ima "iste" subfoldere npr: DTOs, Repository, Services, Models foldere..
+	Svaki module ima svoj "ApplicationDbContext".
+ (Svaki web app BE ce u najmanju ruku biti Modular Monolith, skoro nikad Layered Monolith). Ako bude potrebno, napravi od svakog modula microservice gde svaki microservis je projekat za sebe. 
+ Microservisi se prave cim pocnu modules da komuniciraju medjusobno. Cim bude nesto moralo da se zameni/doda kroz celu applikaciju, teze jer, jer nije microservice => razlog zasto pretvoriti ako zatreba u Microservice.

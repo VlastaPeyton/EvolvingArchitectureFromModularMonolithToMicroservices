@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Evolutionary Architecture on FitnetApp\\Fitnet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolutionary architecture on fitnetapp\\fitnet\\initialarchitecture\\contracts\\preparecontract\\preparecontractendpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\contracts\\preparecontract\\preparecontractendpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolutionary architecture on fitnetapp\\fitnet\\initialarchitecture\\contracts\\contractsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\contracts\\contractsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrepareContractEndpointExtensions.cs",
+              "DocumentMoniker": "C:\\Projects\\Evolutionary Architecture on FitnetApp\\Fitnet\\InitialArchitecture\\Contracts\\PrepareContract\\PrepareContractEndpointExtensions.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Contracts\\PrepareContract\\PrepareContractEndpointExtensions.cs",
+              "ToolTip": "C:\\Projects\\Evolutionary Architecture on FitnetApp\\Fitnet\\InitialArchitecture\\Contracts\\PrepareContract\\PrepareContractEndpointExtensions.cs",
+              "RelativeToolTip": "InitialArchitecture\\Contracts\\PrepareContract\\PrepareContractEndpointExtensions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T19:47:37.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContractsEndpoints.cs",
+              "DocumentMoniker": "C:\\Projects\\Evolutionary Architecture on FitnetApp\\Fitnet\\InitialArchitecture\\Contracts\\ContractsEndpoints.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Contracts\\ContractsEndpoints.cs",
+              "ToolTip": "C:\\Projects\\Evolutionary Architecture on FitnetApp\\Fitnet\\InitialArchitecture\\Contracts\\ContractsEndpoints.cs",
+              "RelativeToolTip": "InitialArchitecture\\Contracts\\ContractsEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T19:29:16.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

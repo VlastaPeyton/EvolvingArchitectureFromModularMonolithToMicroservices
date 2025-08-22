@@ -12,8 +12,9 @@ namespace InitialArchitecture.Contracts.SignContract
         {   // Endpoint se pokrece tek kad ValidateRequest<SignContractRequest> zavrsi 
             app.MapPatch($"api/contracts", async (Guid id, SignContractRequest request, ContractsDbContext dbContext, IEventBus bus, TimeProvider timeProvider, CancellationToken cancellationToken) =>
             {   // Ove argumente u Endpoint, RequestValidationApiFilter vidi kao Arguments listu object? tipa
-
-                // TimeProvider, ContractsDbContext i IEventBus moram da registrujem u DI 
+                
+                /* Koristim TimeProvider iako je to isto kao DateTimeOffset, ali ovo se moze lakse testirati nego DateTimeOffset
+                   TimeProvider, ContractsDbContext i IEventBus moram da registrujem u DI */
 
                 // Nadji ugovor koji je napravljen pomocu Contract.Prepare i stavljen u bazu u PrepareContractEndpointExtension u MapPrepareContract
                 var contract = await dbContext.Contracts.FindAsync([id], cancellationToken); // EF Core change tracks contract . FindAsync samo za PK moze i zato id stavljam. [id], jer dobra praksa ako budem imao Composite PK pa onda [pk1, pk2,...]
@@ -34,7 +35,7 @@ namespace InitialArchitecture.Contracts.SignContract
                     contract.ExpiringAt!.Value,
                     timeProvider.GetUtcNow());
 
-                await bus.PublishAsync(@event, cancellationToken);
+                await bus.PublishAsync(@event, cancellationToken); // Publish ContractSignedEvent to InMemory Event Bus, a Passes.RegisterPass.Events.ContractSignedEventHandler ovo handluje automatski jer je nasledio INotificationEventHandler
 
                 return Results.NoContent();
 

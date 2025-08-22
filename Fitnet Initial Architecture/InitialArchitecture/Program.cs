@@ -3,6 +3,8 @@ using InitialArchitecture.Common.ErrorHandling;
 using InitialArchitecture.Common.Events.EventBus;
 using InitialArchitecture.Common.Validation;
 using InitialArchitecture.Contracts;
+using InitialArchitecture.Offers;
+using InitialArchitecture.Passes;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,8 +15,10 @@ builder.Services.AddSwaggerGen(); // <= SwashBuckle.AspNetCore NuGet
 builder.Services.AddExceptionHandling(); 
 builder.Services.AddEventBus();
 builder.Services.AddRequestValidations();
-builder.Services.AddContracts(builder.Configuration);
 builder.Services.AddClock();
+builder.Services.AddContracts(builder.Configuration);
+builder.Services.AddOffers(builder.Configuration);
+builder.Services.AddPasses(builder.Configuration);
 
 var app = builder.Build();
 
@@ -26,9 +30,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseErrorHandling(); 
 app.UseContracts();
+app.UseOffers();
+app.UsePasses();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapContracts();
+app.MapPasses(); 
 
 app.Run();
 

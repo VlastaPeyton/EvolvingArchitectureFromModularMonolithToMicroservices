@@ -15,7 +15,8 @@ namespace InitialArchitecture.Common.Validation
             var requestToValidate = context.Arguments.FirstOrDefault(argument => argument?.GetType() == typeof(TRequestToValidate)) as TRequestToValidate;
             // Pogleda argumente prosledjene to Minimal API Endpoint i pronadje TRequestToValidate. Mora "as TRequestToValidate", jer svi arguenti su object? type u context
 
-            var validator = context.HttpContext.RequestServices.GetService<IValidator<TRequestToValidate>>();  // FluentValidation from NuGet
+            var validator = context.HttpContext.RequestServices.GetService<IValidator<TRequestToValidate>>();  // FluentValidation from NuGet zbog IValidator
+            // U odnosu na tip TRequestToValidate nadje validator koji treba
             if (validator is null)
                 return await next.Invoke(context); // Pozove sledeci Endpoint Filter i kad odradi sve filtere, onda nastavlja u Minimal API Endpoint
 

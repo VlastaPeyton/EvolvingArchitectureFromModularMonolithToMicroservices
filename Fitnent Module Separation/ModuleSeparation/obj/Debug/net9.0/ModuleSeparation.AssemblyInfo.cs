@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModuleSeparation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65ad84486a1ffe86d351b2ae920ef81ee674ec64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b00a96cdc75a477b21e2e2ce0636db1665b2f524")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModuleSeparation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModuleSeparation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

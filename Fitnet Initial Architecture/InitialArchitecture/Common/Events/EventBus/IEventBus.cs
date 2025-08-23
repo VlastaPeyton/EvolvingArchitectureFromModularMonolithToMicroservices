@@ -1,8 +1,12 @@
-﻿namespace InitialArchitecture.Common.Events.EventBus
+﻿using System.Runtime.ConstrainedExecution;
+
+namespace InitialArchitecture.Common.Events.EventBus
 {
     internal interface IEventBus
     {   // Mora @event, jer event je reserverd keyword 
-        // Obzirom da je TEvent argument, mora <TEvent> postojati, jer ovo je dobra praksa za EventBus posto generic omogucava da metoda radi sa tipom a @event da prosledim objekat tog tipa
-        Task PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken) where TEvent : IIntegrationEvent;
+        /*<TEvent> - u konkretnoj implementaciji ove metode, znači da će MediatR moći da pronađe tačan event handler koji obrađuje baš taj tip događaja.
+        Bez<TEvent>, Mediatr ne bi znao koji tačno handler da pozove, jer on mapira handlere po konkretnom tipu događaja, a ne samo po interfejsu. 
+        */
+                Task PublishAsync<TEvent>(TEvent @event, CancellationToken cancellationToken) where TEvent : IIntegrationEvent;
     }
 }

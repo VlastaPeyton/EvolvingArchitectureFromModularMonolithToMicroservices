@@ -14,7 +14,7 @@ namespace InitialArchitecture.Offers.Data.Database
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema(Schema);
-            modelBuilder.ApplyConfiguration(new OfferEntityConfiguration);
+            modelBuilder.ApplyConfiguration(new OfferEntityConfiguration());
         }
     }
 }

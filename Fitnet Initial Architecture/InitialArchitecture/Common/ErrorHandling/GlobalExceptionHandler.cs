@@ -6,8 +6,8 @@ namespace InitialArchitecture.Common.ErrorHandling
 {
     internal sealed class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger) : IExceptionHandler
     {
-        private const string? ServerError = "Server Error";
-        private const string? ErrorOccurredMessage = "An error occurred";
+        private const string ServerError = "Server Error";
+        private const string ErrorOccurredMessage = "An error occurred";
 
         private static readonly Action<ILogger, string, Exception> LogException = LoggerMessage.Define<string>(LogLevel.Error, eventId: new EventId(0, "ERROR"), formatString: "{Message}"); 
         // "high-performance" način da se pripremi šablon za logovanje unapred (kao delegate), da bi se izbegla nepotrebna alokacija stringova pri svakom logovanju.

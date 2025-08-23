@@ -6,12 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>a8107f58-0aeb-4d48-b120-22b7b0722c66</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="Docs\ArchitectureDecisions\007-use-in-memory-event-bus.txt" />
-    <Compile Include="Docs\ArchitectureDecisions\008-use-internal-sealed-as-default.txt" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.66" />

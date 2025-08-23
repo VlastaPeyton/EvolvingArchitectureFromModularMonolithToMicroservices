@@ -1,0 +1,13 @@
+﻿Datum:
+	15.8.2025
+
+Problem:
+	Treba nam jedan nacin za dependencies i da budem siguran da app radi u razlicitim okruzenjima i operativnim sistemima.
+
+Deicision:
+	Koristim Docker.
+
+Consequences:
+	App runs consistently accross different environments.
+	Container can be easily deployed to any environment that supports Docker
+	Treba malo vremena da se nauci Docker.

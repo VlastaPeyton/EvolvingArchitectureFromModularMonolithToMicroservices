@@ -10,7 +10,7 @@ namespace InitialArchitecture.Passes.RegisterPass
 {   
     // Automatksi se aktivira kada MediatR Publish ContractSignedEvent u Contracts.SignContract.SignContractEndpoint, zato sto je nasledio IIntegrationHandler(:INotificationHandler)
     internal sealed class ContractSignedEventHandler(PassesDbContext dbContext, IEventBus eventBus) : IIntegrationEventHandler<ContractSignedEvent>
-    {
+    {  // IIntegrationEvent nasledio INotificationHandler koji zahteva da custom handler ovaj implementira Handle metodu
        public async Task Handle(ContractSignedEvent @event, CancellationToken cancellationToken)
        {
             var pass = Pass.Register(@event.ContractCustomerId, @event.SignedAt, @event.ExpireAt);

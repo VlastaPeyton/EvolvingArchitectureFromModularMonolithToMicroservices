@@ -5,6 +5,7 @@ using InitialArchitecture.Common.Validation;
 using InitialArchitecture.Contracts;
 using InitialArchitecture.Offers;
 using InitialArchitecture.Passes;
+using InitialArchitecture.Reports;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ builder.Services.AddClock();
 builder.Services.AddContracts(builder.Configuration);
 builder.Services.AddOffers(builder.Configuration);
 builder.Services.AddPasses(builder.Configuration);
+builder.Services.AddReports(); 
 
 var app = builder.Build();
 
@@ -32,10 +34,14 @@ app.UseErrorHandling();
 app.UseContracts();
 app.UseOffers();
 app.UsePasses();
+app.UseReports(); 
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
+
 app.MapContracts();
-app.MapPasses(); 
+app.MapPasses();
+app.MapReports();
 
 app.Run();
 

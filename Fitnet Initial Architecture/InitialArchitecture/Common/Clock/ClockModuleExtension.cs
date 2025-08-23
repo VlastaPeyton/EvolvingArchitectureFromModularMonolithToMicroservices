@@ -4,7 +4,7 @@
     internal static class ClockModuleExtension
     {   // Kako bih mogao u Minimal Api Endpoint da koristim TimeProvider
         public static IServiceCollection AddClock(this IServiceCollection services)
-        {
+        {   // Sve klase koje koriste TimeProvider moraju biti AddSingleton jer je TimeProvider Singleton
             return services.AddSingleton(TimeProvider.System); // => u Program.cs moram builder.Services.AddClock()
         }
     }

@@ -11,7 +11,7 @@ namespace InitialArchitecture.Offers.PrepareOffer
     internal sealed class PassExpiredEventHandler(IEventBus eventBus, OffersDbContext dbContext, TimeProvider timeProvider) : IIntegrationEventHandler<PassExpiredEvent>
     {   // U Common.Events.InMemoryEventBusModule je IEventBus registrovan kao InMemoryEventBus 
         // Koristim TimeProvider iako je to isto kao DateTimeOffset, ali ovo se moze lakse testirati nego DateTimeOffset
-
+        // IIntegrationEvent nasledio INotificationHandler koji zahteva da custom handler ovaj implementira Handle metodu
         public async Task Handle(PassExpiredEvent @event, CancellationToken cancellationToken)
         {   // PassExpiredEvent je iz Passes module 
             var nowDate = timeProvider.GetUtcNow(); // Ovo je u Common.Clock folderu u DI ubaceno, jer mora

@@ -15,4 +15,4 @@ Consequences:
 	Svaki module folder ima "iste" subfoldere npr: DTOs, Repository, Services, Models foldere..
 	Svaki module ima svoj "ApplicationDbContext".
  (Svaki web app BE ce u najmanju ruku biti Modular Monolith, skoro nikad Layered Monolith). Ako bude potrebno, napravi od svakog modula microservice gde svaki microservis je projekat za sebe. 
- Microservisi se prave cim pocnu modules da komuniciraju medjusobno. Cim bude nesto moralo da se zameni/doda kroz celu applikaciju, teze jer, jer nije microservice => razlog zasto pretvoriti ako zatreba u Microservice.
+ Microservisi se prave cim pocnu modules da komuniciraju medjusobno cesto. Cim bude nesto moralo da se zameni/doda kroz celu applikaciju, teze jer, jer nije microservice => razlog zasto pretvoriti ako zatreba u Microservice.

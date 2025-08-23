@@ -1,4 +1,5 @@
-﻿1) Napravio sam InitialArchitecture with Dockerfile enabled
+﻿0) U Reports koristim  Dapper umesto EF Core=> Moram rucno kontrolisati connection to db u reports 
+1) Napravio sam InitialArchitecture with Dockerfile enabled
 2) Ako zelim da napravim Docker Image od projekta => Docker profile run , ali ovo necu, jer mi zelim PostgreSQL Docker, a ne obican PostgreSQL
 3) PostgreSQL koristim kao Docker image => InitialArchitecture -> Add Container Orchestrator Support da bih mogao da spojim InitialArchitecture + PostgreSQL u jedno. 
    Sada u docker-compose.yml imam i InitialArchitecture image i PostgreSQL image.

@@ -1,0 +1,3 @@
+Common.API/Domain/Infrastructure trebaju biti Class Library projects, jer su to helper projekti, 
+nema potrebe da budu Web API, jer nece ih nikad FE direktno gadjati. 
+Slucajno sam stavio da su Web API, ali me mrzelo da ispravljam posle.

@@ -10,7 +10,7 @@ namespace InitialArchitecture.Contracts.Data.Database
         {   // IConfiguration jer builder.Configuration je tog tipa u Program.cs 
             var connectionString = configuration.GetConnectionString(ConnectionStringName); // Ocita iz appsettings.json 
             services.AddDbContext<ContractsDbContext>(options => options.UseNpgsql(connectionString)); // <= Npgsql.EntityFrameworkCore.PostgreSQL NuGet
-            
+            // AddDbContext je Scoped automatski 
             return services; // => u Program.cs mogu builder.AddDatabase(Builder.configuration)...
         }
         public static IApplicationBuilder UseContractsDatabase(this IApplicationBuilder applicationBuilder)

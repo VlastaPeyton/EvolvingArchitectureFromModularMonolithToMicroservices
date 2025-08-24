@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\common\\validation\\requestvalidationapifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\common\\validation\\requestvalidationapifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\common\\validation\\requestvalidationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\common\\validation\\requestvalidationextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\common\\validation\\endpointbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\common\\validation\\endpointbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\common\\events\\eventbus\\eventbusmoduleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\common\\events\\eventbus\\eventbusmoduleextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventBusModuleExtensions.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
-              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
-              "RelativeToolTip": "InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T21:57:36.256Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -38,8 +37,60 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EndpointBuilderExtensions.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\EndpointBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Validation\\EndpointBuilderExtensions.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\EndpointBuilderExtensions.cs",
+              "RelativeToolTip": "InitialArchitecture\\Common\\Validation\\EndpointBuilderExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T22:57:35.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestValidationApiFilter.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "RelativeToolTip": "InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T22:56:39.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestValidationExtensions.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationExtensions.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Validation\\RequestValidationExtensions.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationExtensions.cs",
+              "RelativeToolTip": "InitialArchitecture\\Common\\Validation\\RequestValidationExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T22:54:37.5Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EventBusModuleExtensions.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
+              "RelativeToolTip": "InitialArchitecture\\Common\\Events\\EventBus\\EventBusModuleExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T21:57:36.256Z",
+              "EditorCaption": ""
             }
           ]
         }

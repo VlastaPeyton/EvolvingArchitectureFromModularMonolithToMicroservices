@@ -51,6 +51,16 @@
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.targets": {}
         }
+      },
+      "Common.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Common.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Domain.dll": {}
+        }
       }
     }
   },
@@ -177,10 +187,16 @@
         "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Shared.resources.dll",
         "tools/zh-Hant/Microsoft.VisualStudio.Containers.Tools.Tasks.resources.dll"
       ]
+    },
+    "Common.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Common.Domain/Common.Domain.csproj",
+      "msbuildProject": "../Common.Domain/Common.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Common.Domain >= 1.0.0",
       "FluentValidation >= 12.0.0",
       "FluentValidation.DependencyInjectionExtensions >= 12.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1"
@@ -217,7 +233,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Common.Domain\\Common.Domain.csproj": {
+              "projectPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Common.Domain\\Common.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

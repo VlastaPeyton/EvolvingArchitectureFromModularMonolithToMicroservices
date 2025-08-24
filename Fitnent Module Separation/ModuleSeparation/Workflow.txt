@@ -1,1 +1,0 @@
-﻿Nakon zavrsenon Fitnet Initial Architecture, radim ModuleSeparation jer projekat evolvira i polako pravim tranziciju iz Modular Monolith (InitialArchitecture) to Microservices

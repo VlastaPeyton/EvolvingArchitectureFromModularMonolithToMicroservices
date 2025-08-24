@@ -1,6 +1,0 @@
-@ModuleSeparation_HostAddress = http://localhost:5115
-
-GET {{ModuleSeparation_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

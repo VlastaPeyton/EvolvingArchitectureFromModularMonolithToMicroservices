@@ -7,7 +7,7 @@
         public static bool IsModuleEnabled(this IConfiguration configuration, string module)
         {   
             // GetSection iz appsettings.json uzima "Modules" key
-            // GetValue<bool> Modules key ima true/false value
+            // GetValue<bool>("Enabled") uzima Modules:Enabled key koji ima true/false value
             return configuration.GetSection(GetModuleConfiguration(module)).GetValue<bool>(AvailabilityConfigKeyName);
         }
 

@@ -1,0 +1,15 @@
+Datum:
+	25.8.2025
+
+Problem:
+	Contracts module se cesto unapredjuje, a trenutno je Monolith app i onda mora da se redeploy. 
+ 
+Decision:
+	Extract Contracts module out of the Monolith and develop it as a separate microservice.
+
+Consequences:
+	Independence: Each team can work, manage, and deploy their services independently, allowing the contracts team to focus solely on their module’s functionality and performance.
+	Easier Concurrent User Handling: As the contracts module will be its own microservice, it can be scaled independently, making it easier to handle a large number of concurrent users without affecting other parts of the application.
+	Improved Agility: Teams can make frequent updates to their respective microservices without the need to coordinate with other teams, enhancing the overall agility of our development process.
+	Increased Complexity: Introducing microservices adds complexity in terms of deployment, service communication, and data management. Appropriate strategies for handling these challenges should be defined.
+

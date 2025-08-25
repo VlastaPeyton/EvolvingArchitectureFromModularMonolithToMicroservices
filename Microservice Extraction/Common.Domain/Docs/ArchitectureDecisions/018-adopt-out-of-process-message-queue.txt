@@ -1,0 +1,14 @@
+Datum:
+	25.8.2025
+
+Problem:
+	Do sada, Modular Monolith (jos nije Contracts postao Microservice) i koristio sam In-memory Message Broker for inter-module communication.
+	In-memory izbrise poruke kada se app ugasi.
+Decision:
+	Zbog prelaska Contracts from Module to Microservice, moram uzeti External(out-of-process) Message Broker, jer In-memory vise ne vrsi posao, 
+ posto nisu vise tightly coupled Modules + poruke zelim da ostaju sacuvane i kad se ugasi app.
+
+Consequences:
+	Independence of development.
+	By separating the contracts module, changes in this area no longer impact the monolithic application, lowering the deployment risk for the rest of the system.
+	As the contracts module will be its own microservice, it can be scaled independently, making it easier to handle a large number of concurrent users without affecting other parts of the application.

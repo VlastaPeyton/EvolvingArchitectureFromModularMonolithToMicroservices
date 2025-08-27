@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1048445F-BAC3-4179-9302-019289C5EF85}|Common.Infrastructure\\Common.Infrastructure.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnent module separation\\common.infrastructure\\events\\iintegrationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1048445F-BAC3-4179-9302-019289C5EF85}|Common.Infrastructure\\Common.Infrastructure.csproj|solutionrelative:common.infrastructure\\events\\iintegrationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IIntegrationEventHandler.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
+              "RelativeDocumentMoniker": "Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
+              "RelativeToolTip": "Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:07:49.498Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"

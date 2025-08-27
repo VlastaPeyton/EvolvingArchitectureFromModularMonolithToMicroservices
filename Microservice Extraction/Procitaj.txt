@@ -1,0 +1,15 @@
+Contracts is solution with Contracts microservice
+
+Fitnet(Modular Monolith) is solution that contains Modular Monolith with Passes, Offers, Repors where each of these keeps same structure as per Chapter 2 (Modular Monolith).
+
+Common is solution which contains reusable components for Modular Monolith (Passes, Offers and Reports) and Contracts microservice . Ovo je built into packages which is reused by Fitnet i Contracts. Radim Packages da ne bih duplirao logiku u Contracts and Modular Monolith.
+Contracts.IntegrationEvents project to make it as a package (Contracts.IntegrationEvents project desni klip 
+
+Modular Monolith is subscribed to Message Broker.
+Contracts is publishing events to Message Broker.
+
+Za Production, moram imati bar 2 RabbitMQ, jer ako 1 padne, da drugi radi - ovo nisam nikad radio i ne znam kako, ali vrv na cloud se namesta kao i sve.
+
+Nastavi readme citati ako treba
+
+

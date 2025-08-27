@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fitnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eada5d22c162fd9b83f332a2058efec5ba402e40")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad1ff930b978ecd52ce37835993ffe069d5fced8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fitnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fitnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

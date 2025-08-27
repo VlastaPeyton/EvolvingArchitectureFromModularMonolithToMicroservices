@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\reports\\dataaccess\\databaseaccessmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\reports\\dataaccess\\databaseaccessmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\common\\validation\\requestvalidationapifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\common\\validation\\requestvalidationapifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RequestValidationApiFilter.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "RelativeToolTip": "InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T16:53:22.741Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -27,19 +40,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseAccessModule.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Reports\\DataAccess\\DatabaseAccessModule.cs",
-              "RelativeDocumentMoniker": "InitialArchitecture\\Reports\\DataAccess\\DatabaseAccessModule.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Reports\\DataAccess\\DatabaseAccessModule.cs",
-              "RelativeToolTip": "InitialArchitecture\\Reports\\DataAccess\\DatabaseAccessModule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-24T18:18:00.424Z",
-              "EditorCaption": ""
             }
           ]
         }

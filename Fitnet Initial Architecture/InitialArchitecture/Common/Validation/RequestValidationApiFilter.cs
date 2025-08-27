@@ -5,6 +5,7 @@ using FluentValidation;
 namespace InitialArchitecture.Common.Validation
 {   
     // Klasa mora da implementira IEndpointFilter zbog EndpointBuilderExtensions.cs gde je dodeljujem u AddEndpointFilter
+    // Koristim geenrik kako bih koristio isti RequestValidationApiFilter za sve vrste Request koje Endpoint primaju, jer bez generic, morao bih za svaki Request poseban RequestValidationApiFilter praviti
     internal sealed class RequestValidationApiFilter<TRequestToValidate> : IEndpointFilter where TRequestToValidate : class
     {   
         // Mora ova metoda zbog interface 

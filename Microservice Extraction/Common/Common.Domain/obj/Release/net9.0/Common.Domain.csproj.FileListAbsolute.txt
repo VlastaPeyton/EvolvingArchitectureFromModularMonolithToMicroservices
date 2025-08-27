@@ -1,0 +1,13 @@
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\bin\Release\net9.0\Common.Domain.deps.json
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\bin\Release\net9.0\Common.Domain.dll
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\bin\Release\net9.0\Common.Domain.pdb
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.csproj.AssemblyReference.cache
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.AssemblyInfoInputs.cache
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.AssemblyInfo.cs
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.sourcelink.json
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.dll
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\refint\Common.Domain.dll
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\Common.Domain.pdb
+C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Domain\obj\Release\net9.0\ref\Common.Domain.dll

@@ -48,7 +48,7 @@ namespace Common.API.ErrorHandling
             context.Response.StatusCode = statusCode;
 
             var result = JsonSerializer.Serialize(new ExceptionResponseMessage(statusCode, message));
-            // Zbog ovoga ce biti ContentType u Response 'application/json'
+            // I zbog ovoga ce biti ContentType u Response 'application/json'
 
             await context.Response.WriteAsync(result);
             

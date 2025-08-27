@@ -31,17 +31,17 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Common.Domain/1.0.0": {
+      "CommonDomainLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8"
         },
         "compile": {
-          "bin/placeholder/Common.Domain.dll": {}
+          "bin/placeholder/CommonDomainLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Common.Domain.dll": {}
+          "bin/placeholder/CommonDomainLibrary.dll": {}
         }
       }
     }
@@ -92,7 +92,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Common.Domain/1.0.0": {
+    "CommonDomainLibrary/1.0.0": {
       "type": "project",
       "path": "../Common.Domain/Common.Domain.csproj",
       "msbuildProject": "../Common.Domain/Common.Domain.csproj"
@@ -100,7 +100,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Common.Domain >= 1.0.0",
+      "CommonDomainLibrary >= 1.0.0",
       "FluentValidation >= 12.0.0"
     ]
   },

@@ -4,6 +4,13 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<!-- NuGet metadata -->
+	<PackageId>CommonInfrastructureLibrary</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>Vlasta</Authors>
+	<Company>Sinfon</Company>
+	<Description>Common.Infrastructure NuGet.</Description>
+	<PackageTags>utilities;helpers;common</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

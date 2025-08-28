@@ -9,7 +9,7 @@ namespace Contracts.Application.Sign
     // No return type u IRequestHandler, pa Handle mora da vrati void 
     internal sealed class SignContractCommandHandler(IContractsRepository contractsRepository, 
                                                      TimeProvider timeProvider,
-                                                     IPublishEndpoint publishEndpoint) : IRequestHandler<SignContractCommand>
+                                                     IPublishEndpoint eventBus) : IRequestHandler<SignContractCommand>
     {
         // Mora Handle zbog interface. Automatski se pozove kada SignContractEndpoint uradi ExecuteCommandAsync
         public async Task Handle(SignContractCommand command, CancellationToken cancellationToken)
@@ -23,7 +23,7 @@ namespace Contracts.Application.Sign
 
             var @event = ContractSignedEvent.Create(contract.Id, contract.CustomerId, contract.SignedAt!.Value, contract.ExpiringAt!.Value, timeProvider.GetLocalNow());
             // ContractSignedEvent je IntegrationEvent jer ga odavde Publish to RabbitMQ, ali ne implementira IIntegrationEvent jer to je za MediatR, a sad koristim RabbitMQ za integration event slanje
-            await publishEndpoint.Publish(@event, cancellationToken);
+            await eventBus.Publish(@event, cancellationToken);
 
         }
     }

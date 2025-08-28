@@ -15,7 +15,7 @@ namespace Contracts.API.Prepare
 
                 return Results.Created($"/api/contracts/{contractId}", contractId);
 
-            }).ValidateRequest<PrepareContractRequest>();
+            }).ValidateRequest<PrepareContractRequestValidator>();
         }
     }
 }

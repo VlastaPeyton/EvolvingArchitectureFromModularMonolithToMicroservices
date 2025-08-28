@@ -4,6 +4,15 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+
+	<!-- NuGet metadata -->
+	<PackageId>CommonAPILibrary</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>Vlasta</Authors>
+	<Company>Sinfon</Company>
+	<Description>Common.API NuGet</Description>
+	<PackageTags>utilities;helpers;common</PackageTags>
+	<IsPackable>true</IsPackable> <!-- Dodao ovo, jer Common.API treba biti Class library, ali nesto nije htelo da se instalira IServiceCollection, pa sam odabrao Web API proj-->
   </PropertyGroup>
 
   <ItemGroup>

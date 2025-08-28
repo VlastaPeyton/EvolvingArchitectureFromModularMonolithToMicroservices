@@ -15,7 +15,7 @@ namespace Contracts.API.Sign
 
                 return Results.NoContent();
 
-            }).ValidateRequest<SignContractRequest>();
+            }).ValidateRequest<SignContractRequestValidator>();
         }
     }
 }

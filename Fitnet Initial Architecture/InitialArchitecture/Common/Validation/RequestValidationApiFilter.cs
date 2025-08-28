@@ -10,7 +10,7 @@ namespace InitialArchitecture.Common.Validation
     {   
         // Mora ova metoda zbog interface 
         public async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
-        {   // context sadrzi info about trenutni poziv of Minimal API Endpoint (argumente, koji su tipa object?, koje Minimal API Endpoint prima, HTTP Request polja...)
+        {   // context sadrzi info about trenutni poziv of Minimal API Endpoint (argumente, koji su tipa object?, koje Minimal API Endpoint prima ( HTTP Request polja...)
             // next sluzi da pozove sledeci Endpoint Filter ako ga ima in pipeline
 
             var requestToValidate = context.Arguments.FirstOrDefault(argument => argument?.GetType() == typeof(TRequestToValidate)) as TRequestToValidate;
@@ -19,7 +19,7 @@ namespace InitialArchitecture.Common.Validation
             var validator = context.HttpContext.RequestServices.GetService<IValidator<TRequestToValidate>>();  // FluentValidation from NuGet zbog IValidator
             // U odnosu na tip TRequestToValidate nadje validator koji treba
             if (validator is null)
-                return await next.Invoke(context); // Pozove sledeci Endpoint Filter i kad odradi sve filtere, onda nastavlja u Minimal API Endpoint
+                return await next.Invoke(context); // Pozove sledeci Endpoint Filter ako ga ima, i kad odradi sve filtere, onda nastavlja u Minimal API Endpoint
 
             var validationResult = await validator.ValidateAsync(requestToValidate); // Pokrece PrepareContractRequestValidator ili SignContractRequestValidator (jer sam ih added to DI in RequestValidationExtensions) u zavisnosti da li je TRequestToValidate PrepareContractRequest ili SignContractRequest
             if (validationResult.IsValid)

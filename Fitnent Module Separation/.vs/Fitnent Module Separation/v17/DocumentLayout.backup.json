@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1048445F-BAC3-4179-9302-019289C5EF85}|Common.Infrastructure\\Common.Infrastructure.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnent module separation\\common.infrastructure\\events\\iintegrationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1048445F-BAC3-4179-9302-019289C5EF85}|Common.Infrastructure\\Common.Infrastructure.csproj|solutionrelative:common.infrastructure\\events\\iintegrationeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0B3C0A5-7E2C-46A2-AEE6-606C180D7180}|Contracts.API\\Contracts.API.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnent module separation\\contracts.api\\prepare\\preparecontractendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B3C0A5-7E2C-46A2-AEE6-606C180D7180}|Contracts.API\\Contracts.API.csproj|solutionrelative:contracts.api\\prepare\\preparecontractendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30BFC58D-7E74-499E-962F-E0A928E3FA78}|Contracts.Application\\Contracts.Application.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnent module separation\\contracts.application\\icontractsmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30BFC58D-7E74-499E-962F-E0A928E3FA78}|Contracts.Application\\Contracts.Application.csproj|solutionrelative:contracts.application\\icontractsmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IIntegrationEventHandler.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
-              "RelativeDocumentMoniker": "Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
-              "RelativeToolTip": "Common.Infrastructure\\Events\\IIntegrationEventHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T16:07:49.498Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -39,7 +30,36 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IContractsModule.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Contracts.Application\\IContractsModule.cs",
+              "RelativeDocumentMoniker": "Contracts.Application\\IContractsModule.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Contracts.Application\\IContractsModule.cs",
+              "RelativeToolTip": "Contracts.Application\\IContractsModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T11:32:48.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PrepareContractEndpoint.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Contracts.API\\Prepare\\PrepareContractEndpoint.cs",
+              "RelativeDocumentMoniker": "Contracts.API\\Prepare\\PrepareContractEndpoint.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnent Module Separation\\Contracts.API\\Prepare\\PrepareContractEndpoint.cs",
+              "RelativeToolTip": "Contracts.API\\Prepare\\PrepareContractEndpoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T11:30:34.707Z",
+              "EditorCaption": ""
             }
           ]
         }

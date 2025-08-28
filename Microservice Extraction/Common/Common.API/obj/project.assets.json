@@ -112,7 +112,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\Common.API.csproj",
-      "projectName": "Common.API",
+      "projectName": "CommonAPILibrary",
       "projectPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\Common.API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\obj\\",
@@ -130,6 +130,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\Common API NuGet": {},
+        "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

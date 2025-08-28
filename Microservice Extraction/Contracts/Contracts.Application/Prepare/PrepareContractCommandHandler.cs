@@ -8,7 +8,7 @@ namespace Contracts.Application.Prepare
     internal sealed class PrepareContractCommandHandler(IContractsRepository contractsRepository) : IRequestHandler<PrepareContractCommand, Guid> 
     {   // IContractsRepository bice registrovan kao ContractsRepository u Infrastructure 
 
-        // Mora Handle zbog interface. Automatski se pozove kad 
+        // Mora Handle zbog interface. Automatski se pozove kad PrepareContractEndpoint aktivira ExecuteCommandAsync
         public async Task<Guid> Handle(PrepareContractCommand command, CancellationToken cancellationToken)
         {
             var previousContract = await contractsRepository.GetPreviousForCustomerAsync(command.CustomerId, cancellationToken);

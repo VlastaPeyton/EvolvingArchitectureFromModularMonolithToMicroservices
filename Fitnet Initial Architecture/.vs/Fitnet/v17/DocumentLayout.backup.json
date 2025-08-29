@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\common\\validation\\requestvalidationapifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\common\\validation\\requestvalidationapifilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\reports\\generatenewpassesregistrationspermonthreport\\generatenppmreportmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\reports\\generatenewpassesregistrationspermonthreport\\generatenppmreportmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\fitnet initial architecture\\initialarchitecture\\reports\\reportsendpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81A82154-A270-460F-B210-B305F7365345}|InitialArchitecture\\InitialArchitecture.csproj|solutionrelative:initialarchitecture\\reports\\reportsendpointextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RequestValidationApiFilter.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
-              "RelativeDocumentMoniker": "InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
-              "RelativeToolTip": "InitialArchitecture\\Common\\Validation\\RequestValidationApiFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Title": "GenerateNPPMReportModule.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Reports\\GenerateNewPassesRegistrationsPerMonthReport\\GenerateNPPMReportModule.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Reports\\GenerateNewPassesRegistrationsPerMonthReport\\GenerateNPPMReportModule.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Reports\\GenerateNewPassesRegistrationsPerMonthReport\\GenerateNPPMReportModule.cs",
+              "RelativeToolTip": "InitialArchitecture\\Reports\\GenerateNewPassesRegistrationsPerMonthReport\\GenerateNPPMReportModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T16:53:22.741Z",
+              "WhenOpened": "2025-08-29T09:45:25.346Z",
               "EditorCaption": ""
             },
             {
@@ -39,7 +43,20 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportsEndpointExtensions.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Reports\\ReportsEndpointExtensions.cs",
+              "RelativeDocumentMoniker": "InitialArchitecture\\Reports\\ReportsEndpointExtensions.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Fitnet Initial Architecture\\InitialArchitecture\\Reports\\ReportsEndpointExtensions.cs",
+              "RelativeToolTip": "InitialArchitecture\\Reports\\ReportsEndpointExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T09:40:13.319Z",
+              "EditorCaption": ""
             }
           ]
         }

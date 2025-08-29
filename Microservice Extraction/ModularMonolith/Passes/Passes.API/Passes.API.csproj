@@ -7,7 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommonInfrastructureLibrary" Version="1.0.0" />
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	<PackageReference Include="CommonInfrastructureLibrary" Version="1.0.0" />
+    <PackageReference Include="ContractsIntegrationEventsLibrary" Version="1.0.0" />
+    <PackageReference Include="MassTransit" Version="8.5.2" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Passes.DataAccess\Passes.DataAccess.csproj" />
   </ItemGroup>
 
 </Project>

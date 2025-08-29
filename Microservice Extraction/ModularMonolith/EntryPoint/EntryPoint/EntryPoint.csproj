@@ -10,7 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommonAPILibrary" Version="1.0.0" />
+    <PackageReference Include="CommonInfrastructureLibrary" Version="1.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Offers\Offers.API\Offers.API.csproj" />
+    <ProjectReference Include="..\..\Passes\Passes.API\Passes.API.csproj" />
+    <ProjectReference Include="..\..\Reports\Reports\Reports.csproj" />
   </ItemGroup>
 
 </Project>

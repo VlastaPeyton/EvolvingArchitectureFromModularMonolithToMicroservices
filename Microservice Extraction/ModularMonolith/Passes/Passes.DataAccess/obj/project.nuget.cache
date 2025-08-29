@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "09a4gvRkcUE=",
+  "dgSpecHash": "FKLi0DlwFPo=",
   "success": true,
   "projectFilePath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Passes\\Passes.DataAccess\\Passes.DataAccess.csproj",
   "expectedPackageFiles": [

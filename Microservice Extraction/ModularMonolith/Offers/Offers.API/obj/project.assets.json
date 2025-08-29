@@ -17,6 +17,15 @@
           "lib/net9.0/Common.Infrastructure.dll": {}
         }
       },
+      "ContractsIntegrationEventsLibrary/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Contracts.IntegrationEvents.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Contracts.IntegrationEvents.dll": {}
+        }
+      },
       "MassTransit/8.5.2": {
         "type": "package",
         "dependencies": {
@@ -47,6 +56,41 @@
         },
         "runtime": {
           "lib/net9.0/MassTransit.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MassTransit.EntityFrameworkCore/8.5.2": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "8.5.2",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.1",
+          "Microsoft.Extensions.Caching.Memory": "9.0.1"
+        },
+        "compile": {
+          "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MassTransit.RabbitMQ/8.5.2": {
+        "type": "package",
+        "dependencies": {
+          "MassTransit": "8.5.2",
+          "RabbitMQ.Client": "7.1.2"
+        },
+        "compile": {
+          "lib/net9.0/MassTransit.RabbitMqTransport.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/MassTransit.RabbitMqTransport.dll": {
             "related": ".xml"
           }
         }
@@ -553,6 +597,39 @@
           }
         }
       },
+      "RabbitMQ.Client/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0",
+          "System.Threading.RateLimiting": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO.Pipelines/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Text.Encodings.Web/8.0.0": {
         "type": "package",
         "compile": {
@@ -575,10 +652,27 @@
           }
         }
       },
+      "System.Threading.RateLimiting/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Threading.RateLimiting.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Offers.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
+          "CommonInfrastructureLibrary": "1.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
@@ -596,13 +690,38 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "CommonInfrastructureLibrary": "1.0.0"
+          "CommonInfrastructureLibrary": "1.0.0",
+          "ContractsIntegrationEventsLibrary": "1.0.0",
+          "MassTransit": "8.5.2",
+          "MassTransit.RabbitMQ": "8.5.2",
+          "Passes.DataAccess": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Passes.API.dll": {}
         },
         "runtime": {
           "bin/placeholder/Passes.API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Passes.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MassTransit": "8.5.2",
+          "MassTransit.EntityFrameworkCore": "8.5.2",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
+          "Microsoft.EntityFrameworkCore": "9.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Passes.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Passes.DataAccess.dll": {}
         }
       }
     }
@@ -617,6 +736,17 @@
         "commoninfrastructurelibrary.1.0.0.nupkg.sha512",
         "commoninfrastructurelibrary.nuspec",
         "lib/net9.0/Common.Infrastructure.dll"
+      ]
+    },
+    "ContractsIntegrationEventsLibrary/1.0.0": {
+      "sha512": "EAZIIEpsdN5HYGnfuZbI4QKymJlcaAlkwsDC3Ar9hp4Y5ee3WG24pKjXlNdYWrr8Phi8pFxP+XjPitmGGuHp4A==",
+      "type": "package",
+      "path": "contractsintegrationeventslibrary/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "contractsintegrationeventslibrary.1.0.0.nupkg.sha512",
+        "contractsintegrationeventslibrary.nuspec",
+        "lib/net9.0/Contracts.IntegrationEvents.dll"
       ]
     },
     "MassTransit/8.5.2": {
@@ -658,6 +788,44 @@
         "lib/netstandard2.0/MassTransit.Abstractions.xml",
         "masstransit.abstractions.8.5.2.nupkg.sha512",
         "masstransit.abstractions.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.EntityFrameworkCore/8.5.2": {
+      "sha512": "sEZDAn7sT4XzZ+sWueh3fJ94sskr6EwwxqEe242XalMdsAoqq02veh/xdwQKP9EAiGpqd4KnxxlvKWmi3yL7rA==",
+      "type": "package",
+      "path": "masstransit.entityframeworkcore/8.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net8.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.dll",
+        "lib/net9.0/MassTransit.EntityFrameworkCoreIntegration.xml",
+        "masstransit.entityframeworkcore.8.5.2.nupkg.sha512",
+        "masstransit.entityframeworkcore.nuspec",
+        "mt-logo-small.png"
+      ]
+    },
+    "MassTransit.RabbitMQ/8.5.2": {
+      "sha512": "VMjFTzGRpfWkVTjZyDw6wTpjNi0UxlRhDVdYcp70TN3CvZ6iP3aK3pC6wEU0d0E1znTXOoYbS4abwJCcp38LbQ==",
+      "type": "package",
+      "path": "masstransit.rabbitmq/8.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.README.md",
+        "lib/net472/MassTransit.RabbitMqTransport.dll",
+        "lib/net472/MassTransit.RabbitMqTransport.xml",
+        "lib/net8.0/MassTransit.RabbitMqTransport.dll",
+        "lib/net8.0/MassTransit.RabbitMqTransport.xml",
+        "lib/net9.0/MassTransit.RabbitMqTransport.dll",
+        "lib/net9.0/MassTransit.RabbitMqTransport.xml",
+        "lib/netstandard2.0/MassTransit.RabbitMqTransport.dll",
+        "lib/netstandard2.0/MassTransit.RabbitMqTransport.xml",
+        "masstransit.rabbitmq.8.5.2.nupkg.sha512",
+        "masstransit.rabbitmq.nuspec",
         "mt-logo-small.png"
       ]
     },
@@ -1387,6 +1555,52 @@
         "postgresql.png"
       ]
     },
+    "RabbitMQ.Client/7.1.2": {
+      "sha512": "y3c6ulgULScWthHw5PLM1ShHRLhxg0vCtzX/hh61gRgNecL3ZC3WoBW2HYHoXOVRqTl99Br9E7CZEytGZEsCyQ==",
+      "type": "package",
+      "path": "rabbitmq.client/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net8.0/RabbitMQ.Client.dll",
+        "lib/net8.0/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.7.1.2.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+      "type": "package",
+      "path": "system.io.pipelines/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
+        "lib/net6.0/System.IO.Pipelines.dll",
+        "lib/net6.0/System.IO.Pipelines.xml",
+        "lib/net7.0/System.IO.Pipelines.dll",
+        "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Text.Encodings.Web/8.0.0": {
       "sha512": "yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
       "type": "package",
@@ -1422,6 +1636,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Threading.RateLimiting/8.0.0": {
+      "sha512": "7mu9v0QDv66ar3DpGSZHg9NuNcxDaaAcnMULuZlaTpP9+hwXhrxNGsF5GmLkSHxFdb5bBc1TzeujsRgTrPWi+Q==",
+      "type": "package",
+      "path": "system.threading.ratelimiting/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Threading.RateLimiting.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Threading.RateLimiting.targets",
+        "lib/net462/System.Threading.RateLimiting.dll",
+        "lib/net462/System.Threading.RateLimiting.xml",
+        "lib/net6.0/System.Threading.RateLimiting.dll",
+        "lib/net6.0/System.Threading.RateLimiting.xml",
+        "lib/net7.0/System.Threading.RateLimiting.dll",
+        "lib/net7.0/System.Threading.RateLimiting.xml",
+        "lib/net8.0/System.Threading.RateLimiting.dll",
+        "lib/net8.0/System.Threading.RateLimiting.xml",
+        "lib/netstandard2.0/System.Threading.RateLimiting.dll",
+        "lib/netstandard2.0/System.Threading.RateLimiting.xml",
+        "system.threading.ratelimiting.8.0.0.nupkg.sha512",
+        "system.threading.ratelimiting.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Offers.DataAccess/1.0.0": {
       "type": "project",
       "path": "../Offers.DataAccess/Offers.DataAccess.csproj",
@@ -1431,6 +1674,11 @@
       "type": "project",
       "path": "../../Passes/Passes.API/Passes.API.csproj",
       "msbuildProject": "../../Passes/Passes.API/Passes.API.csproj"
+    },
+    "Passes.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../../Passes/Passes.DataAccess/Passes.DataAccess.csproj",
+      "msbuildProject": "../../Passes/Passes.DataAccess/Passes.DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1470,6 +1718,7 @@
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\Common API NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Infrastructure\\Common Infrastructure NuGet": {},
+        "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\Contracts IntegrationEvents NuGet": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

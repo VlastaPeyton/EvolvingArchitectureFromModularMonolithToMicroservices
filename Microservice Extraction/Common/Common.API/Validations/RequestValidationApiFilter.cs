@@ -1,10 +1,18 @@
-﻿using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
 using FluentValidation;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Common.API.Validations
-{   // Generic, jer ova klasa primace onda sve vrste Request za bilo koji Endpoint. Bez generic, za svaki Request type bih morao poseban filter praviti
+{
+    // Generic, jer ova klasa primace onda sve vrste Request za bilo koji Endpoint. Bez generic, za svaki Request type bih morao poseban filter praviti
     internal sealed class RequestValidationApiFilter<TRequestToValidate> : IEndpointFilter where TRequestToValidate : class
-    {   
+    {
         // Mora metoda zbog interface
         public async ValueTask<object?> InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next)
         {   // context sadrzi info about trenutni poziv of Minimal API Endpoint (argumente, koji su tipa object?, koje Minimal API Endpoint prima ( HTTP Request polja itd...)

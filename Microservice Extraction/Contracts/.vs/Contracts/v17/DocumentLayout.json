@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B840657C-8C2F-4D52-BD1D-5E41AEA314C5}|Contracts.Application\\Contracts.Application.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\microservice extraction\\contracts\\contracts.application\\sign\\signcontractcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B840657C-8C2F-4D52-BD1D-5E41AEA314C5}|Contracts.Application\\Contracts.Application.csproj|solutionrelative:contracts.application\\sign\\signcontractcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8324408C-B20B-45D8-A66E-D4D35E3C1510}|Contracts.Infrastructure\\Contracts.Infrastructure.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\microservice extraction\\contracts\\contracts.infrastructure\\eventbus\\eventbusoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8324408C-B20B-45D8-A66E-D4D35E3C1510}|Contracts.Infrastructure\\Contracts.Infrastructure.csproj|solutionrelative:contracts.infrastructure\\eventbus\\eventbusoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8324408C-B20B-45D8-A66E-D4D35E3C1510}|Contracts.Infrastructure\\Contracts.Infrastructure.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\microservice extraction\\contracts\\contracts.infrastructure\\eventbus\\eventbusmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8324408C-B20B-45D8-A66E-D4D35E3C1510}|Contracts.Infrastructure\\Contracts.Infrastructure.csproj|solutionrelative:contracts.infrastructure\\eventbus\\eventbusmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,21 +29,37 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignContractCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.Application\\Sign\\SignContractCommandHandler.cs",
-              "RelativeDocumentMoniker": "Contracts.Application\\Sign\\SignContractCommandHandler.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.Application\\Sign\\SignContractCommandHandler.cs",
-              "RelativeToolTip": "Contracts.Application\\Sign\\SignContractCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T17:21:00.672Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventBusOptions.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.Infrastructure\\EventBus\\EventBusOptions.cs",
+              "RelativeDocumentMoniker": "Contracts.Infrastructure\\EventBus\\EventBusOptions.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.Infrastructure\\EventBus\\EventBusOptions.cs",
+              "RelativeToolTip": "Contracts.Infrastructure\\EventBus\\EventBusOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T12:22:56.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventBusModule.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.Infrastructure\\EventBus\\EventBusModule.cs",
+              "RelativeDocumentMoniker": "Contracts.Infrastructure\\EventBus\\EventBusModule.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.Infrastructure\\EventBus\\EventBusModule.cs",
+              "RelativeToolTip": "Contracts.Infrastructure\\EventBus\\EventBusModule.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T12:19:41.064Z"
             }
           ]
         }

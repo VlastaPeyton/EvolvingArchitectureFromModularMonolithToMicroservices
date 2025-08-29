@@ -23,7 +23,7 @@ namespace Reports
                 return services;
             }
 
-            services.AddDataAccess();
+            services.AddReportsDataAccess();
             services.AddNewPassesRegistrationsPerMonthReport();
 
             return services;

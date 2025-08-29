@@ -2,7 +2,7 @@
 {
     internal static class DatabaseAccessModule
     {
-        internal static IServiceCollection AddDataAccess(this IServiceCollection services)
+        internal static IServiceCollection AddReportsDataAccess(this IServiceCollection services)
         {
             services.AddSingleton<IDatabaseConnectionFactory, DatabaseConnectionFactory>();
             return services;

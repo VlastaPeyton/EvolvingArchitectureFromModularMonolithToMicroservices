@@ -1,4 +1,5 @@
-﻿using Common.Infrastructure.Events;
+﻿
+using Common.Infrastructure.Events;
 
 namespace Offers.API.Prepare
 {
@@ -9,5 +10,4 @@ namespace Offers.API.Prepare
             return new OfferPrepareIntegrationEvent(Guid.NewGuid(), offerId, customerId, occurredAt);
         }
     }
-
 }

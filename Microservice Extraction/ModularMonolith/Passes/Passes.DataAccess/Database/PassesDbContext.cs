@@ -14,7 +14,9 @@ namespace Passes.DataAccess.Database
         {
             modelBuilder.HasDefaultSchema(Schema);
             modelBuilder.ApplyConfiguration(new PassEntityConfiguration());
-            // Inbox-Outbox pattern. Zbog AutoPassesMigrationExtension automatski se naprave ove 3 tabele u bazi ali za Schema="Passes" jer ovo nemam u Reports i Offers
+            /* Inbox-Outbox pattern. Zbog AutoPassesMigrationExtension automatski se naprave ove 3 tabele u bazi ali za Schema="Passes" jer ovo nemam u Reports i Offers
+               Zbog ovoga, moram u ContractSignedEventConsumerDefinition da koristim UseEntityFrameworkOutbox, a moram i Passes.API.OutboxExtension da napravim da definisem Outbox 
+            */
             modelBuilder.AddInboxStateEntity(); // InboxState tabela u bazi prati poruke(event in RabbitMQ) su već primljene i obrađene iz RabbitMQ
             modelBuilder.AddOutboxMessageEntity(); // OutboxMessage tabela u bazi u koju servis stavi event pre nego sto ga MassTrasitom posalje na RabbitMQ
             modelBuilder.AddOutboxStateEntity(); // OutboxState tabela u bazi koja registruje stanje slanja poruka(event) npr. status (da li je poruka uspešno poslata, u kom pokušaju, itd).

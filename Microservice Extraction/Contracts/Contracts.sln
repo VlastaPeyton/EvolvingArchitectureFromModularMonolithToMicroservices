@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.Application", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.API", "Contracts.API\Contracts.API.csproj", "{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.IntegrationEvents", "Contracts.IntegrationEvents\Contracts.IntegrationEvents.csproj", "{154072D0-AAF7-472D-8671-239AD75C8CFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154072D0-AAF7-472D-8671-239AD75C8CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154072D0-AAF7-472D-8671-239AD75C8CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154072D0-AAF7-472D-8671-239AD75C8CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154072D0-AAF7-472D-8671-239AD75C8CFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

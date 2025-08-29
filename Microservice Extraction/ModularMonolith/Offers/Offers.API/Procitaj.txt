@@ -1,1 +1,0 @@
-Offers.API mora class library project, ali ne umem da instaliram WebApplication  i onda sam uzeo Web API project

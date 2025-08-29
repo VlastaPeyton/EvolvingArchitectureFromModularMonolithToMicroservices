@@ -29,6 +29,7 @@
           "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\Common API NuGet": {},
           "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
           "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Infrastructure\\Common Infrastructure NuGet": {},
+          "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\Contracts IntegrationEvents NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +54,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "CommonInfrastructureLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.AspNetCore.Http.Abstractions": {
               "target": "Package",
               "version": "[2.3.0, )"

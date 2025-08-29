@@ -22,7 +22,7 @@ namespace Passes.DataAccess
             return new Pass(Guid.NewGuid(), customerId, from, to);  
         }
 
-        public void MarAsExpired(DateTimeOffset now)
+        public void MarkAsExpired(DateTimeOffset now)
         {
             To = now;
         }

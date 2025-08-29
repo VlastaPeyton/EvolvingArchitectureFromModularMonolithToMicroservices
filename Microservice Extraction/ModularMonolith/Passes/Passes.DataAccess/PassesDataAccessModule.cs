@@ -8,14 +8,14 @@ namespace Passes.DataAccess
 {
     public static class DataAccessModule
     {
-        public static IServiceCollection AddDataAccess(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddPassesDataAccess(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddPassesDatabase(configuration);
 
             return services;
         }
 
-        public static IApplicationBuilder UseDataAccess(this IApplicationBuilder applicationBuilder)
+        public static IApplicationBuilder UsePassesDataAccess(this IApplicationBuilder applicationBuilder)
         {
             applicationBuilder.UsePassesDatabase();
 

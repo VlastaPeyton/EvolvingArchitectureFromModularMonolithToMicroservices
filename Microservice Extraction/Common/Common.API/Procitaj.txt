@@ -1,2 +1,0 @@
-Posto je Common solution isto kao Common folder sto sam imao u InitialArchitecture, i trebao bih staviti i Common.API da bude Class Library project type, 
-ali ima problem sto nece da mi instalira libraries za neke stvari i onda sam uzeo Web API type project iako mi ovaj tip projekta ne treba.

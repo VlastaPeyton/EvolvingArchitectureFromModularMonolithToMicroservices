@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A34EDBA-9B08-47BD-89AC-5989ABE4E77C}|EntryPoint\\EntryPoint\\EntryPoint.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\microservice extraction\\modularmonolith\\entrypoint\\entrypoint\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2A34EDBA-9B08-47BD-89AC-5989ABE4E77C}|EntryPoint\\EntryPoint\\EntryPoint.csproj|solutionrelative:entrypoint\\entrypoint\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\EntryPoint\\EntryPoint\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "EntryPoint\\EntryPoint\\appsettings.Development.json",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\EntryPoint\\EntryPoint\\appsettings.Development.json",
+              "RelativeToolTip": "EntryPoint\\EntryPoint\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-29T12:57:22.836Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"

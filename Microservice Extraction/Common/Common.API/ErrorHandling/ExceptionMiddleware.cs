@@ -1,6 +1,12 @@
-﻿using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
 using Common.Domain.BusinessRules;
+using Microsoft.AspNetCore.Http;
 
 namespace Common.API.ErrorHandling
 {
@@ -51,7 +57,7 @@ namespace Common.API.ErrorHandling
             // I zbog ovoga ce biti ContentType u Response 'application/json'
 
             await context.Response.WriteAsync(result);
-            
+
         }
     }
 

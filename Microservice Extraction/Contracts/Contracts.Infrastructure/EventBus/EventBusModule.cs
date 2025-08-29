@@ -17,6 +17,7 @@ namespace Contracts.Infrastructure.EventBus
             services.AddMassTransit(configurator =>
             {
                 configurator.SetSnakeCaseEndpointNameFormatter();
+                // nema configurator.AddConsumers(...), jer Contracts samo Publish event to Message Broker
                 configurator.UsingRabbitMq((context, factoryConfigurator) =>
                 {  
                     var options = context.GetRequiredService<IOptions<EventBusOptions>>();

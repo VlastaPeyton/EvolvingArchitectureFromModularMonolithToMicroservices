@@ -29,6 +29,7 @@
           "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.API\\Common API NuGet": {},
           "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
           "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Infrastructure\\Common Infrastructure NuGet": {},
+          "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\Contracts IntegrationEvents NuGet": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,6 +53,28 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "CommonInfrastructureLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
+            "Microsoft.AspNetCore.Routing.Abstractions": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,6 +87,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

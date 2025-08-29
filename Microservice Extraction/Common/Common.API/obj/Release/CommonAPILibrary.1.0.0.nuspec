@@ -6,7 +6,7 @@
     <authors>Vlasta</authors>
     <description>Common.API NuGet</description>
     <tags>utilities helpers common</tags>
-    <repository type="git" commit="325a458e01687b47bf61df381b1b57a7fb79b0ab" />
+    <repository type="git" commit="cb0d1ec15280f7657a2bf6210d838132cc543e84" />
     <dependencies>
       <group targetFramework="net9.0">
         <dependency id="CommonDomainLibrary" version="1.0.0" exclude="Build,Analyzers" />
@@ -20,7 +20,6 @@
     </frameworkReferences>
   </metadata>
   <files>
-    <file src="C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.API\bin\Release\net9.0\Common.API.runtimeconfig.json" target="lib\net9.0\Common.API.runtimeconfig.json" />
     <file src="C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.API\bin\Release\net9.0\Common.API.dll" target="lib\net9.0\Common.API.dll" />
   </files>
 </package>

@@ -1,0 +1,8 @@
+Common.API/Domain/Infrastructure trebaju biti Class Library projects, jer su to helper projekti, pa nema potrebe da budu Web API, jer nece ih nikad FE direktno gadjati. 
+Slucajno sam stavio da su Web API, ali me mrzelo da ispravljam posle.
+
+Modular Monolith znaci trebam imati samo 1 Web API project u kom su izlozeni svi Endpoint od svih modula. Ostali projekti su class library. To je Fitnet project. Ostali projects su class library typa.
+
+Ja sam greskom stavljao Web APi za neke layere u modulima, iako ne bi smelo, ali me mrzelo da ispravljam.
+
+

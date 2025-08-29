@@ -1,0 +1,14 @@
+Datum:
+	29.8.2025
+
+Problem:
+	Contracts module business logic expanding fast, particullarly with req for annex.
+
+Decision:
+	Implement Tactical DDD for Contracts.
+
+Consequences:
+	Easier to adapt business changes due to clear aggregate boundaries.
+	More accurate presentation of business concepts and relationaship through.
+	Easier to test domain logic.
+	Trazi da se znaju DDD patterns, a to znam iz EShopMicroservices.

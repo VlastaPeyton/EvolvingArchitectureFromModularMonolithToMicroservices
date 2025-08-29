@@ -1,0 +1,11 @@
+﻿Datum:
+	23.8.2025
+
+Problem:
+	Izabrati feature management NuGet izmedju Microsoft, LaunchDarkly and Unleash.
+
+Decision:
+	Izabracu Microsfot Management tool.
+
+Consequences:
+	Djabe + lako se implementira + jednostavnija + jednostavno konfigurisati.

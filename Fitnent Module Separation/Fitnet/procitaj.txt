@@ -1,0 +1,2 @@
+Fitnet jedini je Web API project, jer je to ENpoints (ulaz) u nasu app, a svi ostali projects trebaju biti Class library - ovo je Modular monolith.
+Ja sam greskom negde stavljao Web API project umesto Class library, ali posle me mrzelo da ispravljam.

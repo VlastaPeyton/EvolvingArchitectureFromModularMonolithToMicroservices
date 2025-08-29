@@ -1,0 +1,12 @@
+Datum:
+	25.8.2025
+
+Problem:
+	Inbox-Outbox pattern with MassTransit has to be implemented.
+	MassTrasint je biblioteka za RabbitMQ.
+
+Decision:
+	Huge community jer svi koriste MassTransit.
+
+Consequences:
+	Radi ubija najbolja fora je ovo.

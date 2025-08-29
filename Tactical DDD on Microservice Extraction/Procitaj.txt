@@ -1,0 +1,15 @@
+Nastavak na Microservice Extraction chapter. 
+U Initial Architecture chapter, uradio sam Strategic DDD jer sam sve razlozio na bounded context.
+Sada radicu Tactical DDD na vec postojeci microservice, tako sto dodajem Value Objects, Entities, Aggregates and Domain Events.
+
+Modifikujem Common.Domain i Common.Api => napravim nove verzije packeta za njih
+Modifikujem Contracts.
+
+What is Domain-Driven Design?
+	Domain-Driven Design (DDD) is a set of techniques and methods that help developers tackle business complexity. It is particularly useful for systems full of business processes and rules that aren’t easy to understand for people unfamiliar with the business area.
+Using DDD is not recommended for trivial business cases, such as when the complexity lies only in the technology itself, or when the application is just CRUD-based and can be designed as simple UI mockups (shallow systems).
+
+
+Sada, Contract ce biti draft, dok Binding Contract ce biti pravi koji customer potpisuje. U Contract i dalje imacu Sign/Prepare. U Binding Contract imacu Add Annex/Terminate.  U Annex imacu Sign/Create.
+After Contract is signed, BindingContract is created. Nakon 3meseca ili vise, customer moze da terminate Binding Contract bez penala. Moze se dodati Annex na Binding Contract to extend for another year without preparing new Contract for him. Annex can only be attached if Binding Contract is active (not expired or wasn't terminated).
+

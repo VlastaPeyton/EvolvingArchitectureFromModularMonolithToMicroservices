@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE70ED28-032E-432B-98E5-505C7185AC6A}|Common.API\\Common.API.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.api\\errorhandling\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE70ED28-032E-432B-98E5-505C7185AC6A}|Common.API\\Common.API.csproj|solutionrelative:common.api\\errorhandling\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T17:29:09.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

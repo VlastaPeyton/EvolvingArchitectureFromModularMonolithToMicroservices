@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CommonAPILibrary</id>
+    <version>2.0.0</version>
+    <authors>Vlasta</authors>
+    <description>Common.API NuGet with Tactical DDD</description>
+    <tags>utilities helpers common</tags>
+    <repository type="git" commit="5e2eb7467dc1c82318323b1b40a85f72d8878460" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="CommonDomainLibrary" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="FluentValidation" version="12.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net9.0">
+        <frameworkReference name="Microsoft.AspNetCore.App" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Tactical DDD on Microservice Extraction\Common\Common.API\bin\Release\net9.0\Common.API.dll" target="lib\net9.0\Common.API.dll" />
+  </files>
+</package>

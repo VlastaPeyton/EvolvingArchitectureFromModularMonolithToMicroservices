@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CommonInfrastructureLibrary</id>
+    <version>1.0.0</version>
+    <authors>Vlasta</authors>
+    <description>Common.Infrastructure NuGet.</description>
+    <tags>utilities helpers common</tags>
+    <repository type="git" commit="9afa108cc1cf248b06924d8c4dc1ea11ad0d9b74" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="MediatR" version="13.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="9.0.8" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="8.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Common\Common.Infrastructure\bin\Release\net9.0\Common.Infrastructure.dll" target="lib\net9.0\Common.Infrastructure.dll" />
+  </files>
+</package>

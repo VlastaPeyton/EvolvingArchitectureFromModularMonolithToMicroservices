@@ -1,0 +1,14 @@
+Datum:
+	29.8.2025
+
+Problem:
+	The Contracts module’s business logic is becoming more complex in the current project state, with an increasing number of negative scenarios that need to be handled.
+	Current error handling approach is based on exceptions, that are expensive in terms of performance.
+	Exceptions are 10 times slower than other error handling approaches like Result type.
+	Result type is easier to understand and follow + 10x faster + easier to maintain...
+
+Decision:
+	Result type approach for error handling in Contracts microservice.
+
+Consequences:
+	Result type approach simplifies domain logic. Error flow is easy to follow. Performance improved. 

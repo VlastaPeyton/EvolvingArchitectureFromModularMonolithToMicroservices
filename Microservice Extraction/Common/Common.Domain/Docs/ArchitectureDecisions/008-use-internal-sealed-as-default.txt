@@ -1,0 +1,12 @@
+﻿Datum: 
+    15.8.2025
+
+Problem:
+    Odrediti default access level and inheritance za klase, cime smanjujem risk od slucajnog nasledjivanja i dohvatanja privatnih polja.
+
+Decision:
+    internal sealed access level for all non-extension classes
+ 
+Consequences:
+    internal klasama (i svemu unutra) pristupam mogu samo unutar istog Project(Assembly) sto znaci da iz Project2(Assembly2) ne mogu referencirati internal klasu u Project1(Assembly1).
+    sealed explicitno kaze da klasa nije namenjena nasledjivanju.

@@ -1,0 +1,11 @@
+﻿Datum:
+	23.8.2025
+
+Problem:
+	Kako projekat razvijam, bagovi su neminovni i ne mogu rucno da pregledam kod stalno.
+
+Decision:
+	Static code analysis pomocu automatskih tools.
+
+Consequences:
+	Static code analysis will help us catch code quality issues, bugs, and security vulnerabilities at an early stage of development, reducing the likelihood of these issues reaching production

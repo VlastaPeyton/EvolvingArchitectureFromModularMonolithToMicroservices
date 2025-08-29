@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CommonDomainLibrary</id>
+    <version>2.0.0</version>
+    <authors>Vlasta</authors>
+    <description>Common.Domain NuGet with Tactical DDD</description>
+    <tags>utilities helpers common</tags>
+    <repository type="git" commit="5e2eb7467dc1c82318323b1b40a85f72d8878460" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="ErrorOr" version="1.10.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Tactical DDD on Microservice Extraction\Common\Common.Domain\bin\Release\net9.0\Common.Domain.dll" target="lib\net9.0\Common.Domain.dll" />
+  </files>
+</package>

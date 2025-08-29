@@ -1,0 +1,13 @@
+﻿Datum:
+	15.8.2025
+
+Problem:
+	Moram odrediti testiranje.
+
+Decision:
+	Koristicu Unit i Integration tests.
+	Unit test: ponasanje komponenti tj clasa i metoda. Testiranje rada komponente kad je izolujem from external dependencies koristeci Mock tehnike.
+	Integration test: interakcija izmedju API, DB, external servisa.
+
+Consequences:
+	Kako se povecava codebase, moramo i testove azurirati da pokriju sve to.

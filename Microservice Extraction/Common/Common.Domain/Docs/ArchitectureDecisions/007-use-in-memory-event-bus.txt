@@ -1,0 +1,17 @@
+﻿Datum:
+    15.8.2025
+
+Problem:
+    Projekat je na pocetku i trenutno je single deployment unit. Treba mi nacin da modules komuniciraju medjusobno (inter-module communication) 
+ bez da su tightly coupled. U pocetku se fokusiram na business process, a ne trosim vreme da razmisljam koji Message Broker mi treba, i zato
+ uzecu in-memory message broker (event bus), pa kasnije cu preci na RabbitMQ.
+
+Decision:
+    In-memory event bus (message broker) za pocetak koristim za inter-module komunikaciju.
+    In-memory event bus koristi MediatR za komunikaciju. Problem sa in-mmeory je sto cim app se ugasi, sve iz event bus se izbrise.
+    Napravicu abstraction layer na event bus da bih u buducnosti mogo preci na RabbitMQ, jer je on external i ako se app ugasi, sve ostaje u njemu i dalje.
+
+Consequences:
+    By implementing an in-memory event bus, our components will be loosely coupled and better able to communicate and interact with each other.
+    One consequence of using an in-memory event bus as opposed to an external message broker is that we cannot retire messages and persist them in the event bus for later retrieval. 
+   In an external message broker, messages can be persisted and stored for a specified period of time, enabling them to be replayed or reprocessed if necessary. However, in an in-memory event bus, messages are stored only in memory and are lost when the event bus is shut down or restarted

@@ -1,0 +1,13 @@
+﻿Datum:
+	23.8.2025
+
+Problem:
+	Do sada, integration test trazili su setup in-memory db for all modules. 
+  Managing these databases has become a cumbersome process, and we want to run integration tests in isolation to achieve modularity and ease of testing.
+
+Decision:
+	Disable certain modules during the execution of integration tests. Only the essential modules required for the functionality being tested will be active
+
+Consequences:
+	Each test will involve fewer modules, which will help to isolate failures and simplify debugging
+	With fewer active modules, tests will consume fewer system resources, potentially improving test performance.

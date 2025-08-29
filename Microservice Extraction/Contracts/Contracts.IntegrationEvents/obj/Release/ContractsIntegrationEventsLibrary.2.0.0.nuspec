@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ContractsIntegrationEventsLibrary</id>
+    <version>2.0.0</version>
+    <authors>Vlasta</authors>
+    <description>Contracts.IntegrationEvents NuGet</description>
+    <tags>utilities helpers common</tags>
+    <repository type="git" commit="4a5bdcff1d9133c9597ab55c3e2fa65976676dfd" />
+    <dependencies>
+      <group targetFramework="net9.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Projects\EvolvingArchitectureGithub\EvolvingArchitectureFromModularMonolithToMicroservices\Microservice Extraction\Contracts\Contracts.IntegrationEvents\bin\Release\net9.0\Contracts.IntegrationEvents.dll" target="lib\net9.0\Contracts.IntegrationEvents.dll" />
+  </files>
+</package>

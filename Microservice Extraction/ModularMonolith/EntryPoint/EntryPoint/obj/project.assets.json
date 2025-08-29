@@ -49,13 +49,26 @@
           "lib/net9.0/Common.Infrastructure.dll": {}
         }
       },
-      "ContractsIntegrationEventsLibrary/1.0.0": {
+      "ContractsIntegrationEventsLibrary/2.0.0": {
         "type": "package",
         "compile": {
           "lib/net9.0/Contracts.IntegrationEvents.dll": {}
         },
         "runtime": {
           "lib/net9.0/Contracts.IntegrationEvents.dll": {}
+        }
+      },
+      "Dapper/2.1.66": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Dapper.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FluentValidation/12.0.0": {
@@ -201,6 +214,22 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Routing.Abstractions/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll": {
             "related": ".xml"
           }
         }
@@ -720,12 +749,49 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Offers.API/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommonInfrastructureLibrary": "1.0.0",
+          "MassTransit": "8.5.2",
+          "Offers.DataAccess": "1.0.0",
+          "Passes.API": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Offers.API.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Offers.API.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Offers.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommonInfrastructureLibrary": "1.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
+          "Microsoft.EntityFrameworkCore": "9.0.8",
+          "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
+          "Microsoft.Extensions.DependencyInjection": "9.0.8",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Offers.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Offers.DataAccess.dll": {}
+        }
+      },
       "Passes.API/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "CommonInfrastructureLibrary": "1.0.0",
-          "ContractsIntegrationEventsLibrary": "1.0.0",
+          "ContractsIntegrationEventsLibrary": "2.0.0",
           "MassTransit": "8.5.2",
           "MassTransit.RabbitMQ": "8.5.2",
           "Passes.DataAccess": "1.0.0"
@@ -757,6 +823,26 @@
         "runtime": {
           "bin/placeholder/Passes.DataAccess.dll": {}
         }
+      },
+      "Reports/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CommonInfrastructureLibrary": "1.0.0",
+          "Dapper": "2.1.66",
+          "Microsoft.AspNetCore.Routing.Abstractions": "2.3.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.8",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "9.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Reports.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reports.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -795,15 +881,34 @@
         "lib/net9.0/Common.Infrastructure.dll"
       ]
     },
-    "ContractsIntegrationEventsLibrary/1.0.0": {
-      "sha512": "EAZIIEpsdN5HYGnfuZbI4QKymJlcaAlkwsDC3Ar9hp4Y5ee3WG24pKjXlNdYWrr8Phi8pFxP+XjPitmGGuHp4A==",
+    "ContractsIntegrationEventsLibrary/2.0.0": {
+      "sha512": "6fxrjGvn+oWonycwTd+hEhoIssZGQO82aqumrukzz4aSRS7JooIf+vFQwmH2YCrHuoogmV9AXUPnEvyG2RHGeg==",
       "type": "package",
-      "path": "contractsintegrationeventslibrary/1.0.0",
+      "path": "contractsintegrationeventslibrary/2.0.0",
       "files": [
         ".nupkg.metadata",
-        "contractsintegrationeventslibrary.1.0.0.nupkg.sha512",
+        "contractsintegrationeventslibrary.2.0.0.nupkg.sha512",
         "contractsintegrationeventslibrary.nuspec",
         "lib/net9.0/Contracts.IntegrationEvents.dll"
+      ]
+    },
+    "Dapper/2.1.66": {
+      "sha512": "/q77jUgDOS+bzkmk3Vy9SiWMaetTw+NOoPAV0xPBsGVAyljd5S6P+4RUW7R3ZUGGr9lDRyPKgAMj2UAOwvqZYw==",
+      "type": "package",
+      "path": "dapper/2.1.66",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Dapper.png",
+        "dapper.2.1.66.nupkg.sha512",
+        "dapper.nuspec",
+        "lib/net461/Dapper.dll",
+        "lib/net461/Dapper.xml",
+        "lib/net8.0/Dapper.dll",
+        "lib/net8.0/Dapper.xml",
+        "lib/netstandard2.0/Dapper.dll",
+        "lib/netstandard2.0/Dapper.xml",
+        "readme.md"
       ]
     },
     "FluentValidation/12.0.0": {
@@ -959,6 +1064,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
         "microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Routing.Abstractions/2.3.0": {
+      "sha512": "ZkFpUrSmp6TocxZLBEX3IBv5dPMbQuMs6L/BPl0WRfn32UVOtNYJQ0bLdh3cL9LMV0rmTW/5R0w8CBYxr0AOUw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.routing.abstractions/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Routing.Abstractions.xml",
+        "microsoft.aspnetcore.routing.abstractions.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.routing.abstractions.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore/9.0.8": {
@@ -1817,6 +1935,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Offers.API/1.0.0": {
+      "type": "project",
+      "path": "../../Offers/Offers.API/Offers.API.csproj",
+      "msbuildProject": "../../Offers/Offers.API/Offers.API.csproj"
+    },
+    "Offers.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../../Offers/Offers.DataAccess/Offers.DataAccess.csproj",
+      "msbuildProject": "../../Offers/Offers.DataAccess/Offers.DataAccess.csproj"
+    },
     "Passes.API/1.0.0": {
       "type": "project",
       "path": "../../Passes/Passes.API/Passes.API.csproj",
@@ -1826,6 +1954,11 @@
       "type": "project",
       "path": "../../Passes/Passes.DataAccess/Passes.DataAccess.csproj",
       "msbuildProject": "../../Passes/Passes.DataAccess/Passes.DataAccess.csproj"
+    },
+    "Reports/1.0.0": {
+      "type": "project",
+      "path": "../../Reports/Reports/Reports.csproj",
+      "msbuildProject": "../../Reports/Reports/Reports.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1833,7 +1966,9 @@
       "CommonAPILibrary >= 1.0.0",
       "CommonInfrastructureLibrary >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.22.1",
-      "Passes.API >= 1.0.0"
+      "Offers.API >= 1.0.0",
+      "Passes.API >= 1.0.0",
+      "Reports >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1872,8 +2007,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Offers\\Offers.API\\Offers.API.csproj": {
+              "projectPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Offers\\Offers.API\\Offers.API.csproj"
+            },
             "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Passes\\Passes.API\\Passes.API.csproj": {
               "projectPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Passes\\Passes.API\\Passes.API.csproj"
+            },
+            "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Reports\\Reports\\Reports.csproj": {
+              "projectPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Reports\\Reports\\Reports.csproj"
             }
           }
         }

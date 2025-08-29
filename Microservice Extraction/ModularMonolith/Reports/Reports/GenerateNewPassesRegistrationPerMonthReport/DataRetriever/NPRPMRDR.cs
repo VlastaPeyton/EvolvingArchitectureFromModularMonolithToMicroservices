@@ -10,7 +10,7 @@ namespace Reports.GenerateNewPassesRegistrationPerMonthReport.DataRetriever
 
     internal class NewPassesRegistrationPerMonthReportDataRetriever(IDatabaseConnectionFactory dbConnectionFactory, TimeProvider timeProvider) : INewPassesRegistrationPerMonthReportDataRetriever
     {
-        public async Task<IReadOnlyCollection<NewPassesRegistrationsPerMonthDTO>> GetReportsDataAsync(CancellationToken cancellationToken)
+        public async Task<IReadOnlyCollection<NewPassesRegistrationsPerMonthDTO>> GetReportDataAsync(CancellationToken cancellationToken)
         {
             using var connection = dbConnectionFactory.Create(); // Nakon zavrsetka metode, using ce automatski uraditi connection.Dispose() cime ce connection.Close() + izbaciti je iz pool. Ovim osiguravam da svaki put ce biti nova konekcija i prevent race conditions.
 

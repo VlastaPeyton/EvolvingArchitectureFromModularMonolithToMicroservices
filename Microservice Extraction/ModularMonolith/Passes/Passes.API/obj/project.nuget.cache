@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DdU0D9u3cIk=",
+  "dgSpecHash": "UG21A8H6Tvk=",
   "success": true,
   "projectFilePath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\ModularMonolith\\Passes\\Passes.API\\Passes.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\commoninfrastructurelibrary\\1.0.0\\commoninfrastructurelibrary.1.0.0.nupkg.sha512",
-    "C:\\Users\\User\\.nuget\\packages\\contractsintegrationeventslibrary\\1.0.0\\contractsintegrationeventslibrary.1.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\contractsintegrationeventslibrary\\2.0.0\\contractsintegrationeventslibrary.2.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\masstransit\\8.5.2\\masstransit.8.5.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\masstransit.abstractions\\8.5.2\\masstransit.abstractions.8.5.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\masstransit.entityframeworkcore\\8.5.2\\masstransit.entityframeworkcore.8.5.2.nupkg.sha512",

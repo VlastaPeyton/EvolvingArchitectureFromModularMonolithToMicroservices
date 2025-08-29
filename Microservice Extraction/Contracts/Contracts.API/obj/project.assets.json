@@ -603,6 +603,7 @@
         "dependencies": {
           "CommonAPILibrary": "1.0.0",
           "Contracts.Domain": "1.0.0",
+          "ContractsIntegrationEventsLibrary": "2.0.0",
           "MassTransit": "8.5.2",
           "MediatR": "13.0.0"
         },
@@ -642,6 +643,16 @@
         },
         "runtime": {
           "bin/placeholder/Contracts.Infrastructure.dll": {}
+        }
+      },
+      "ContractsIntegrationEventsLibrary/2.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ContractsIntegrationEventsLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ContractsIntegrationEventsLibrary.dll": {}
         }
       }
     }
@@ -1496,6 +1507,11 @@
       "type": "project",
       "path": "../Contracts.Infrastructure/Contracts.Infrastructure.csproj",
       "msbuildProject": "../Contracts.Infrastructure/Contracts.Infrastructure.csproj"
+    },
+    "ContractsIntegrationEventsLibrary/2.0.0": {
+      "type": "project",
+      "path": "../Contracts.IntegrationEvents/Contracts.IntegrationEvents.csproj",
+      "msbuildProject": "../Contracts.IntegrationEvents/Contracts.IntegrationEvents.csproj"
     }
   },
   "projectFileDependencyGroups": {

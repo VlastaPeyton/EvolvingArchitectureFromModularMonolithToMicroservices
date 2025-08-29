@@ -1,6 +1,7 @@
 ﻿
 
 using Common.API.ErrorHandling;
+using Contracts.IntegrationEvents;
 using MassTransit;
 using MediatR;
 
@@ -13,7 +14,7 @@ namespace Contracts.Application.Sign
     {
         // Mora Handle zbog interface. Automatski se pozove kada SignContractEndpoint uradi ExecuteCommandAsync
         public async Task Handle(SignContractCommand command, CancellationToken cancellationToken)
-        {
+        {   // Prethodno ga je PrepareContractCommandHandler ubacio u bazu pa zato sad mogu da ga nadjem u bazi
             var contract = await contractsRepository.GetByIdAsync(command.Id, cancellationToken) ?? throw new ResourceNotFoundException(command.Id); 
             // Svaki Common solution project je napravljen kao NuGet package i zato ovde ResourceNotFoundException moze + u tom package ima ErrorHandlingExtension za ovo
 

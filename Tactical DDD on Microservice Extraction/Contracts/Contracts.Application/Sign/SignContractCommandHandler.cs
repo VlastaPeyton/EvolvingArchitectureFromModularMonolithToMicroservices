@@ -8,7 +8,7 @@ using MediatR;
 namespace Contracts.Application.Sign
 {
     // No return type u IRequestHandler, pa Handle mora da vrati void 
-    internal sealed class SignContractCommandHandler(IContractsRepository contractsRepository, 
+    internal sealed class SignContractCommandHandler(IContractRepository contractsRepository, 
                                                      TimeProvider timeProvider,
                                                      IPublishEndpoint eventBus) : IRequestHandler<SignContractCommand>
     {

@@ -8,7 +8,7 @@ namespace Contracts.Infrastructure.Mediation
     {
         public static IServiceCollection AddMediationModule(this IServiceCollection services) 
         { 
-            var commandsHandlersAssembly = typeof(IContractsModule).Assembly; // Contracts.Application jer tamo je CommandHandler smesten za svaki write db Request(Command)
+            var commandsHandlersAssembly = typeof(IContractsModule).Assembly; // Contracts.Application Assembly, jer tamo je CommandHandler smesten za svaki write db Request(Command)
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(commandsHandlersAssembly));
             
             return services;

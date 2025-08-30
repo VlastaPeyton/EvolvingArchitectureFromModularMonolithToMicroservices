@@ -4,10 +4,12 @@ using System.Text.RegularExpressions;
 using Contracts.Domain.SignContract.Signatures.Exceptions;
 
 namespace Contracts.Domain.SignContract.Signatures
-{
+{   
+    // partial da bi mogla partial metoda
+    // Signature nema Id, pa je stoga owned entity u Contract.cs i zato u ContractEntityConfiguration namestam da l ce ovo biti posebna tabela ili Signature kolone bice unutar Contracts tabele
     public sealed partial class Signature
     {
-        private static readonly Regex SignaturePattern = SignatureAllowedCharacters();
+        private static readonly Regex SignaturePattern = SignatureAllowedCharacters(); // Ovo logicno nece biti kolona u tabeli
         public DateTimeOffset Date { get; }
         public string Value { get; }
 

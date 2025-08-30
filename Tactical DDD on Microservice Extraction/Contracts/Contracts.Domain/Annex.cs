@@ -2,10 +2,12 @@
 
 using Common.Domain;
 using Contracts.Domain.AttachAnnexToBindingContract;
+using Contracts.Domain.CustomId;
 using static Contracts.Domain.BindingContract;
 
 namespace Contracts.Domain
-{
+{   
+    // Ovo ce biti posebna tabela u bazi.
     public sealed class Annex : Entity
     {   // AnnexId se radi umesto Guid kako bih izbegao primitive obsession. Znam iz EShopMicroservices
         public AnnexId Id { get; init; }
@@ -21,8 +23,8 @@ namespace Contracts.Domain
             BindingContractId = bindingContractId;
             ValidFrom = validFrom;
 
-            var domainEvent = AnnexAttachedToBindingContractDomainEvent.Raise(Id, BindingContractId, ValidFrom);
-            RecordDomainEvent(domainEvent);
+            var annexAttachedToBindingContractDomainEvent = AnnexAttachedToBindingContractDomainEvent.Raise(Id, BindingContractId, ValidFrom);
+            RecordDomainEvent(annexAttachedToBindingContractDomainEvent);
         }
 
         public static Annex Attach(BindingContractId bindingContractId, DateTimeOffset validFrom)

@@ -2,11 +2,13 @@
 
 using Contracts.Application;
 using Contracts.Domain;
+using Contracts.Domain.CustomId;
+using ErrorOr;
 using Microsoft.EntityFrameworkCore;
 
 namespace Contracts.Infrastructure.Database.Repository
 {
-    internal sealed class ContractRepository(ContractsDbContext dbContext) : IContractsRepository
+    internal sealed class ContractRepository(ContractsDbContext dbContext) : IContractRepository
     {
         public async Task AddAsync(Contract contract, CancellationToken cancellationToken)
         {
@@ -19,14 +21,16 @@ namespace Contracts.Infrastructure.Database.Repository
             await dbContext.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task<Contract?> GetByIdAsync(Guid id, CancellationToken cancellationToken)
+        public async Task<ErrorOr<Contract>> GetByIdAsync(Guid id, CancellationToken cancellationToken)
         {
-            return await dbContext.Contracts.FindAsync([id], cancellationToken);
+            var contract =  await dbContext.Contracts.FindAsync([new ContractId(id)], cancellationToken); // ContractId definisan u Configurations da EF Core zna kako da ga cita i upisuje u bazu obzirom da je cutom type
+
+            return contract is not null ? contract : Error.NotFound(nameof(Contract), $"Contract with id '{id}' not found");
         }
 
-        public Task<Contract?> GetPreviousForCustomerAsync(Guid customerId, CancellationToken cancellationToken)
+        public async Task<Contract?> GetPreviousForCustomerAsync(Guid customerId, CancellationToken cancellationToken)
         {
-            return dbContext.Contracts.OrderByDescending(contract => contract.PreparedAt).SingleOrDefaultAsync(contract => contract.CustomerId == customerId, cancellationToken);
+            return await dbContext.Contracts.OrderByDescending(contract => contract.PreparedAt).SingleOrDefaultAsync(contract => contract.CustomerId == customerId, cancellationToken);
         }
     }
 }

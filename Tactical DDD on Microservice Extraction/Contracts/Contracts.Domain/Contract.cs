@@ -1,6 +1,7 @@
 ﻿
 using Common.Domain; // Tools -> NuGet Package Manager -> Setting -> da pokazuje na T DDD Common.Domain jer tu je V2.0.0
 using Common.Domain.BusinessRules;
+using Contracts.Domain.CustomId;
 using Contracts.Domain.PrepareContract;
 using Contracts.Domain.PrepareContract.BusinessRules;
 using Contracts.Domain.SignContract.BusinessRules;
@@ -8,7 +9,8 @@ using Contracts.Domain.SignContract.Signatures;
 using ErrorOr; // Napravio NuGet from Common.Domain i onda instalirao u Contracts.Domain via NuGet manager
 
 namespace Contracts.Domain
-{
+{   
+    // Posebna tabela u bazi
     public sealed class Contract : Entity
     {   // ContracId da ne bude primary obsession
         private static TimeSpan StandardDuration => TimeSpan.FromDays(365);
@@ -16,7 +18,7 @@ namespace Contracts.Domain
         public Guid CustomerId { get; init; }
         public DateTimeOffset PreparedAt { get; init; }
         public TimeSpan Duration { get; init; }
-        public Signature? Signature { get; private set; }
+        public Signature? Signature { get; private set; } // Owned entity, ali nece biti posebna tabela jer cu definisati da ne bude vec da Signature kolone budu u okviru Contracts tabele
         public DateTimeOffset? ExpiringAt { get; private set; }
 
         public bool IsSigned => Signature is not null;
@@ -30,8 +32,8 @@ namespace Contracts.Domain
             PreparedAt = preparedAt;
             Duration = duration;
 
-            var domainEvent = ContractPreparedDomainEvent.Raise(CustomerId, PreparedAt);
-            RecordDomainEvent(domainEvent);
+            var contractPreparedDomainEvent = ContractPreparedDomainEvent.Raise(CustomerId, PreparedAt);
+            RecordDomainEvent(contractPreparedDomainEvent);
 
         }
 

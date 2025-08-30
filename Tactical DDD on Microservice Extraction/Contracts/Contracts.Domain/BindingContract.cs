@@ -2,13 +2,15 @@
 using Common.Domain;
 using Common.Domain.BusinessRules;
 using Contracts.Domain.AttachAnnexToBindingContract.BusinessRule;
+using Contracts.Domain.CustomId;
 using Contracts.Domain.SignContract;
 using Contracts.Domain.TerminateBindingContract;
 using Contracts.Domain.TerminateBindingContract.BusinessRules;
 using ErrorOr;
 
 namespace Contracts.Domain
-{
+{   
+    // Posebna tabela u bazi
     public sealed class BindingContract : Entity
     {   // BindingContractId/ContractId se radi kako bih izbegao primitive obsessions. Znam iz EShopMicroservices.
         public BindingContractId Id { get; init; }
@@ -19,7 +21,7 @@ namespace Contracts.Domain
         public DateTimeOffset BindingFrom { get; init; }
         public DateTimeOffset ExpiringAt { get; init; }
 
-        public ICollection<Annex> AttachedAnnexes { get; }
+        public ICollection<Annex> AttachedAnnexes { get; } // Annexes bice posebna tabela u bazi
 
         private BindingContract(ContractId contractId, Guid customerId, TimeSpan duration, DateTimeOffset bindingFrom, DateTimeOffset expiringAt)
         {
@@ -31,8 +33,8 @@ namespace Contracts.Domain
             BindingFrom = bindingFrom;
             AttachedAnnexes = [];
 
-            var domainEvent = BindingContractStartedDomainEvent.Raise(BindingFrom, ExpiringAt);
-            RecordDomainEvent(domainEvent);
+            var bindingContractStartedDomainEvent = BindingContractStartedDomainEvent.Raise(BindingFrom, ExpiringAt);
+            RecordDomainEvent(bindingContractStartedDomainEvent);
         }
 
         public static BindingContract Start(ContractId id, Guid customerId, TimeSpan duration, DateTimeOffset bindingFrom, DateTimeOffset expiringAt)
@@ -66,22 +68,4 @@ namespace Contracts.Domain
                                         });
         }
     }
-    
-    // record struct mora, jer zeli value type not reference type + da poredim by value not by reference
-    public record struct ContractId(Guid Value)
-    {
-        public static ContractId Create()
-        {
-            return new ContractId(Guid.NewGuid());
-        }
-    }
-
-    public readonly record struct BindingContractId(Guid Value)
-    {
-        public static BindingContractId Create()
-        {
-            return new BindingContractId(Guid.NewGuid());
-        }
-    }
-   
 }

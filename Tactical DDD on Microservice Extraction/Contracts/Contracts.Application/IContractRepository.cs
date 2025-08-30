@@ -2,12 +2,13 @@
 
 
 using Contracts.Domain;
+using ErrorOr;
 
 namespace Contracts.Application
 {
-    public interface IContractsRepository
+    public interface IContractRepository
     {
-        Task<Contract?> GetByIdAsync(Guid id, CancellationToken cancellationToken);
+        Task<ErrorOr<Contract>> GetByIdAsync(Guid id, CancellationToken cancellationToken);
         Task<Contract?> GetPreviousForCustomerAsync(Guid customerId, CancellationToken cancellationToken);
         Task AddAsync(Contract contract, CancellationToken cancellationToken);
         Task CommitAsync(CancellationToken cancellationToken);

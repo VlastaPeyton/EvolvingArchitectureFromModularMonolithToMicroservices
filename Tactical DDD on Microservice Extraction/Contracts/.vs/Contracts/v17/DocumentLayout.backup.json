@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{154072D0-AAF7-472D-8671-239AD75C8CFC}|Contracts.IntegrationEvents\\Contracts.IntegrationEvents.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\contracts\\contracts.integrationevents\\contractsignedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{154072D0-AAF7-472D-8671-239AD75C8CFC}|Contracts.IntegrationEvents\\Contracts.IntegrationEvents.csproj|solutionrelative:contracts.integrationevents\\contractsignedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContractSignedEvent.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\ContractSignedEvent.cs",
+              "RelativeDocumentMoniker": "Contracts.IntegrationEvents\\ContractSignedEvent.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\ContractSignedEvent.cs",
+              "RelativeToolTip": "Contracts.IntegrationEvents\\ContractSignedEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAC4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T16:22:01.7Z",
+              "EditorCaption": ""
             }
           ]
         }

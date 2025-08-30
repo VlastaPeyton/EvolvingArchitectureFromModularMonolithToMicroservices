@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Builder;
 
 namespace Common.API.ErrorHandling
@@ -11,7 +7,7 @@ namespace Common.API.ErrorHandling
     {
         public static IApplicationBuilder UseErrorHandling(this IApplicationBuilder app)
         {
-            app.UseMiddleware<ExceptionMiddleware>();
+            app.UseMiddleware<ExceptionMiddleware>(); // ExceptionMiddleware se automatski poziva jer sam ga registrovao 
             return app;
         }
     }

@@ -2,9 +2,10 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "CommonDomainLibrary/1.0.0": {
+      "CommonDomainLibrary/2.0.0": {
         "type": "package",
         "dependencies": {
+          "ErrorOr": "1.10.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8"
         },
         "compile": {
@@ -12,6 +13,19 @@
         },
         "runtime": {
           "lib/net9.0/Common.Domain.dll": {}
+        }
+      },
+      "ErrorOr/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ErrorOr.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.8": {
@@ -33,15 +47,32 @@
     }
   },
   "libraries": {
-    "CommonDomainLibrary/1.0.0": {
-      "sha512": "S40vseAR5ncK7suaqzp0y/2bvwqvih2IXh8z10spr3oJnDNJpytmr7KdWmlIj/7FjFv6Px0KhN8ID2GBT9HCNQ==",
+    "CommonDomainLibrary/2.0.0": {
+      "sha512": "YaNs3kJ10wPMKM4S0fi7UKA98PyuEzPTl9fl9myMTh3jMXtIpZ0XKVwFriFX3iqJL7S5RZlxlKcLfJC3eyHRpA==",
       "type": "package",
-      "path": "commondomainlibrary/1.0.0",
+      "path": "commondomainlibrary/2.0.0",
       "files": [
         ".nupkg.metadata",
-        "commondomainlibrary.1.0.0.nupkg.sha512",
+        "commondomainlibrary.2.0.0.nupkg.sha512",
         "commondomainlibrary.nuspec",
         "lib/net9.0/Common.Domain.dll"
+      ]
+    },
+    "ErrorOr/2.0.1": {
+      "sha512": "aje9lUVEAsusPFmaRcVM5EUqWBofd7hYtb9N8+ycgPYrtOzyFajMpzRgIO4uuiCllNLBc3x48+cpA+4v4koUDQ==",
+      "type": "package",
+      "path": "erroror/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "erroror.2.0.1.nupkg.sha512",
+        "erroror.nuspec",
+        "icon-square.png",
+        "lib/net6.0/ErrorOr.dll",
+        "lib/net6.0/ErrorOr.xml",
+        "lib/netstandard2.0/ErrorOr.dll",
+        "lib/netstandard2.0/ErrorOr.xml"
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.8": {
@@ -77,7 +108,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "CommonDomainLibrary >= 1.0.0"
+      "CommonDomainLibrary >= 2.0.0",
+      "ErrorOr >= 2.0.1"
     ]
   },
   "packageFolders": {
@@ -110,6 +142,7 @@
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Infrastructure\\Common Infrastructure NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\Contracts IntegrationEvents NuGet": {},
+        "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -136,7 +169,11 @@
         "dependencies": {
           "CommonDomainLibrary": {
             "target": "Package",
-            "version": "[1.0.0, )"
+            "version": "[2.0.0, )"
+          },
+          "ErrorOr": {
+            "target": "Package",
+            "version": "[2.0.1, )"
           }
         },
         "imports": [

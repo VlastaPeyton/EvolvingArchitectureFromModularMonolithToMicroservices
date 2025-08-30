@@ -10,11 +10,11 @@ using Microsoft.AspNetCore.Http;
 
 namespace Common.API.ErrorHandling
 {   
-    // Modifikujem jer vise ne koristim exception vec Result type za gresku
+    // Modifikujem malo ovo u HandleExceptionAsync jer sam onaj jedan exception izbrisao
     internal sealed class ExceptionMiddleware(RequestDelegate next)
     {
         private const string ContentType = "application/json";
-
+        // U ErrorHandlingExtensions sam ovu klasu registrovao kao middleware i zato se InvokeAsync automatski poziva i mora bas tako da se zove
         public async Task InvokeAsync(HttpContext context)
         {
             try

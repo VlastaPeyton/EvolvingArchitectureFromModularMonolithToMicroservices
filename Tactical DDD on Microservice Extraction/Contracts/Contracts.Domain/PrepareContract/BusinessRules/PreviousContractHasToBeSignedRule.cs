@@ -1,6 +1,7 @@
 ﻿
 
 using Common.Domain.BusinessRules;
+using ErrorOr;
 
 namespace Contracts.Domain.PrepareContract.BusinessRules
 {
@@ -12,6 +13,6 @@ namespace Contracts.Domain.PrepareContract.BusinessRules
 
         public bool IsMet() => _signed is true or null;
 
-        public string Error => "Previous contract must be signed by the customer";
+        public Error Error => BusinessRuleError.Create(nameof(PreviousContractHasToBeSignedRule), "Previous contract must be signed by the customer");
     }
 }

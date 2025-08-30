@@ -1,6 +1,7 @@
 ﻿
 
 using Common.Domain.BusinessRules;
+using ErrorOr;
 
 namespace Contracts.Domain.PrepareContract.BusinessRules
 {
@@ -10,10 +11,10 @@ namespace Contracts.Domain.PrepareContract.BusinessRules
 
         private readonly int _height;
 
-        internal CustomerMustBeSmallerThanMaximumHeightLimitRule(int height) => _height = height;
+        public CustomerMustBeSmallerThanMaximumHeightLimitRule(int height) => _height = height;
 
         public bool IsMet() => _height <= MaximumHeight;
 
-        public string Error => "Customer height must fit maximum limit for gym instruments";
+        public Error Error => BusinessRuleError.Create(nameof(CustomerMustBeSmallerThanMaximumHeightLimitRule), "Customer's height must fit maximum limit for gym instruments");
     }
 }

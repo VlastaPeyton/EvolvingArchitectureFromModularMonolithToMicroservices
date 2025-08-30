@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\businessrules\\businessruleerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\businessrules\\businessruleerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\businessrules\\businessrulevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\businessrules\\businessrulevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,11 +26,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BusinessRuleError.cs",
               "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\BusinessRules\\BusinessRuleError.cs",
               "RelativeDocumentMoniker": "Common.Domain\\BusinessRules\\BusinessRuleError.cs",
@@ -43,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BusinessRuleValidator.cs",
               "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\BusinessRules\\BusinessRuleValidator.cs",
               "RelativeDocumentMoniker": "Common.Domain\\BusinessRules\\BusinessRuleValidator.cs",
@@ -56,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "IDomainEvent.cs",
               "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\IDomainEvent.cs",
               "RelativeDocumentMoniker": "Common.Domain\\IDomainEvent.cs",
@@ -77,20 +93,7 @@
               "RelativeToolTip": "Common.Domain\\Entity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T10:32:46.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "WhenOpened": "2025-08-30T10:32:46.994Z"
             }
           ]
         }

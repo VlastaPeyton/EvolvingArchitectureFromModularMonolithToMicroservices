@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommonAPILibrary" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Contracts.Application\Contracts.Application.csproj" />
     <ProjectReference Include="..\Contracts.Infrastructure\Contracts.Infrastructure.csproj" />
   </ItemGroup>

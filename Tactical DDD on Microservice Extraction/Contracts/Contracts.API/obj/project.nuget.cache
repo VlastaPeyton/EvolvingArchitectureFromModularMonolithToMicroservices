@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "gIpGEBw0ml0=",
+  "dgSpecHash": "f3qutbp2q0g=",
   "success": true,
   "projectFilePath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.API\\Contracts.API.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\User\\.nuget\\packages\\commonapilibrary\\1.0.0\\commonapilibrary.1.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\commonapilibrary\\2.0.0\\commonapilibrary.2.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\commondomainlibrary\\2.0.0\\commondomainlibrary.2.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",

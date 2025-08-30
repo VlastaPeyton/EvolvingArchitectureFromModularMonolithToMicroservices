@@ -9,6 +9,7 @@ namespace Contracts.API.Sign
         public SignContractRequestValidator() 
         {
             RuleFor(signContractRequest => signContractRequest.SignedAt).NotEmpty();
+            RuleFor(signContractRequest => signContractRequest.Signature).NotEmpty().MaximumLength(100);
         }
     }
 }

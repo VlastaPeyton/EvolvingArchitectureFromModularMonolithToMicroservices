@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B840657C-8C2F-4D52-BD1D-5E41AEA314C5}|Contracts.Application\\Contracts.Application.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\contracts\\contracts.application\\terminatebindingcontract\\terminatebindingcontractcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B840657C-8C2F-4D52-BD1D-5E41AEA314C5}|Contracts.Application\\Contracts.Application.csproj|solutionrelative:contracts.application\\terminatebindingcontract\\terminatebindingcontractcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}|Contracts.API\\Contracts.API.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\contracts\\contracts.api\\terminatecontract\\terminatecontractendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}|Contracts.API\\Contracts.API.csproj|solutionrelative:contracts.api\\terminatecontract\\terminatecontractendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}|Contracts.API\\Contracts.API.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\contracts\\contracts.api\\contractsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A8B9A3DC-A492-44D1-9EAD-55D304AEB299}|Contracts.API\\Contracts.API.csproj|solutionrelative:contracts.api\\contractsendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TerminateContractEndpoint.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.API\\TerminateContract\\TerminateContractEndpoint.cs",
+              "RelativeDocumentMoniker": "Contracts.API\\TerminateContract\\TerminateContractEndpoint.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.API\\TerminateContract\\TerminateContractEndpoint.cs",
+              "RelativeToolTip": "Contracts.API\\TerminateContract\\TerminateContractEndpoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:56:40.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContractsEndpoints.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.API\\ContractsEndpoints.cs",
+              "RelativeDocumentMoniker": "Contracts.API\\ContractsEndpoints.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.API\\ContractsEndpoints.cs",
+              "RelativeToolTip": "Contracts.API\\ContractsEndpoints.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T16:23:25.162Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -27,19 +57,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TerminateBindingContractCommandHandler.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.Application\\TerminateBindingContract\\TerminateBindingContractCommandHandler.cs",
-              "RelativeDocumentMoniker": "Contracts.Application\\TerminateBindingContract\\TerminateBindingContractCommandHandler.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Contracts\\Contracts.Application\\TerminateBindingContract\\TerminateBindingContractCommandHandler.cs",
-              "RelativeToolTip": "Contracts.Application\\TerminateBindingContract\\TerminateBindingContractCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T16:13:57.01Z",
-              "EditorCaption": ""
             }
           ]
         }

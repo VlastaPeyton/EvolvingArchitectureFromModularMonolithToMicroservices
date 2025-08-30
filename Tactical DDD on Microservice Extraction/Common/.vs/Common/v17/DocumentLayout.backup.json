@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE70ED28-032E-432B-98E5-505C7185AC6A}|Common.API\\Common.API.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.api\\errorhandling\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE70ED28-032E-432B-98E5-505C7185AC6A}|Common.API\\Common.API.csproj|solutionrelative:common.api\\errorhandling\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\idomainevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\businessrules\\businessruleerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\businessrules\\businessruleerror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\businessrules\\businessrulevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\businessrules\\businessrulevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|c:\\projects\\evolvingarchitecturegithub\\evolvingarchitecturefrommodularmonolithtomicroservices\\tactical ddd on microservice extraction\\common\\common.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{093AD53A-0F01-462E-A21C-27812151EBA2}|Common.Domain\\Common.Domain.csproj|solutionrelative:common.domain\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,25 +29,64 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BusinessRuleError.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\BusinessRules\\BusinessRuleError.cs",
+              "RelativeDocumentMoniker": "Common.Domain\\BusinessRules\\BusinessRuleError.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\BusinessRules\\BusinessRuleError.cs",
+              "RelativeToolTip": "Common.Domain\\BusinessRules\\BusinessRuleError.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T11:47:11.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BusinessRuleValidator.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\BusinessRules\\BusinessRuleValidator.cs",
+              "RelativeDocumentMoniker": "Common.Domain\\BusinessRules\\BusinessRuleValidator.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\BusinessRules\\BusinessRuleValidator.cs",
+              "RelativeToolTip": "Common.Domain\\BusinessRules\\BusinessRuleValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T10:34:11.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IDomainEvent.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\IDomainEvent.cs",
+              "RelativeDocumentMoniker": "Common.Domain\\IDomainEvent.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\IDomainEvent.cs",
+              "RelativeToolTip": "Common.Domain\\IDomainEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T10:33:18.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\Entity.cs",
+              "RelativeDocumentMoniker": "Common.Domain\\Entity.cs",
+              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\Entity.cs",
+              "RelativeToolTip": "Common.Domain\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T10:32:46.994Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExceptionMiddleware.cs",
-              "DocumentMoniker": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
-              "RelativeDocumentMoniker": "Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
-              "ToolTip": "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
-              "RelativeToolTip": "Common.API\\ErrorHandling\\ExceptionMiddleware.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-29T17:29:09.157Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

@@ -1,6 +1,8 @@
 ﻿
+using Common.API.ErrorHandling.Problems;
 using Common.API.Validations;
 using Contracts.Application;
+using ErrorOr;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
@@ -16,9 +18,9 @@ namespace Contracts.API.Prepare
                 
                 var command = request.ToCommand(); // Mapiram Request to Command 
                 
-                var contractId = await contractsModule.ExecuteCommandAsync(command, cancellationToken); // Automatski aktivira SignContractCommandHandler jer je command=PrepareContractCommand
+                return await contractsModule.ExecuteCommandAsync(command, cancellationToken)
+                                            .Match(contractId => Results.Created($"api/contracts/{contractId}", contractId), errors => errors.ToProblem()); // Automatski aktivira SignContractCommandHandler jer je command=PrepareContractCommand
 
-                return Results.Created($"api/contracts/{contractId}", contractId);
 
             }).ValidateRequest<PrepareContractRequestValidator>(); // U Common.sln objasnjeno u RequestValidationApiFilter kako automatski zna da pozove PrepareContractRequestValidator
         }

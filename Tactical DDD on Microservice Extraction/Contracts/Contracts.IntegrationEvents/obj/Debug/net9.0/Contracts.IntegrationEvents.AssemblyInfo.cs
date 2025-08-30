@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Contracts.IntegrationEvents NuGet")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+a2452fb675bbb91d6c07610ff6c3bf1eb78f15ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0+eddb9343f8fea167868fb3251b13853ed25f17dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Contracts.IntegrationEvents")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Contracts.IntegrationEvents")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]

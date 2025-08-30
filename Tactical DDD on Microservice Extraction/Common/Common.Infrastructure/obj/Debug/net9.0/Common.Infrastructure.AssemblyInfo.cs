@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Common.Infrastructure NuGet.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e2eb7467dc1c82318323b1b40a85f72d8878460")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eddb9343f8fea167868fb3251b13853ed25f17dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Common.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Common.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

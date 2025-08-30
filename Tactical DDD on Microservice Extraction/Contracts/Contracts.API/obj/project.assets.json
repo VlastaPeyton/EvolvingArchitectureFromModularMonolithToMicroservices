@@ -2,21 +2,17 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "CommonAPILibrary/1.0.0": {
+      "CommonAPILibrary/2.0.0": {
         "type": "package",
         "dependencies": {
-          "CommonDomainLibrary": "1.0.0",
+          "CommonDomainLibrary": "2.0.0",
           "FluentValidation": "12.0.0"
         },
         "compile": {
-          "lib/net9.0/Common.API.dll": {
-            "related": ".runtimeconfig.json"
-          }
+          "lib/net9.0/Common.API.dll": {}
         },
         "runtime": {
-          "lib/net9.0/Common.API.dll": {
-            "related": ".runtimeconfig.json"
-          }
+          "lib/net9.0/Common.API.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -673,16 +669,15 @@
     }
   },
   "libraries": {
-    "CommonAPILibrary/1.0.0": {
-      "sha512": "0xcxjVwz3zrWxun0SUibW+rVsqwumzmFCnxrDzmbpXXTSE1wE/pQdzkRZferTNnZ+aU8FlATMAeFv5q/Ibm0uw==",
+    "CommonAPILibrary/2.0.0": {
+      "sha512": "w1ioKD+gU6Lhthp2EPMyxOm5+iVcgswmfIhbaYickn+hP5bAZUsAw6Tk7RimfTVzu33q2jRdXuhwsHLKfzVR9A==",
       "type": "package",
-      "path": "commonapilibrary/1.0.0",
+      "path": "commonapilibrary/2.0.0",
       "files": [
         ".nupkg.metadata",
-        "commonapilibrary.1.0.0.nupkg.sha512",
+        "commonapilibrary.2.0.0.nupkg.sha512",
         "commonapilibrary.nuspec",
-        "lib/net9.0/Common.API.dll",
-        "lib/net9.0/Common.API.runtimeconfig.json"
+        "lib/net9.0/Common.API.dll"
       ]
     },
     "CommonDomainLibrary/2.0.0": {
@@ -1548,6 +1543,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CommonAPILibrary >= 2.0.0",
       "Contracts.Application >= 1.0.0",
       "Contracts.Infrastructure >= 1.0.0"
     ]
@@ -1582,6 +1578,7 @@
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Common\\Common.Infrastructure\\Common Infrastructure NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Microservice Extraction\\Contracts\\Contracts.IntegrationEvents\\Contracts IntegrationEvents NuGet": {},
+        "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.API\\Common API NuGet": {},
         "C:\\Projects\\EvolvingArchitectureGithub\\EvolvingArchitectureFromModularMonolithToMicroservices\\Tactical DDD on Microservice Extraction\\Common\\Common.Domain\\Common Domain NuGet": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -1613,6 +1610,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "CommonAPILibrary": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
